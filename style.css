@@ -2,6 +2,11 @@ body {
     font-size: 15pt;
 }
 
+info {
+  background:lightgreen;
+  margin-left:2px;
+}
+
 .ps-popup {
   position: absolute;
   top: 50;
