@@ -1,4 +1,7 @@
-let exInfo = {}
+let exInfo = {
+consolee : "Enter an explanation about the word console here",
+frontend : "Enter an explanation about frontend here"
+}
 
 function placeItems() {
 
@@ -7,8 +10,6 @@ let nav = `<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left 
   <a href="home.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
   <a href="index.html" class="w3-bar-item w3-button">JS Intro</a>
   <a href="jshowto.html" onclick="w3_close()" class="w3-bar-item w3-button">JS How To Use</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav> `; 
 
 document.getElementById("navI").innerHTML = nav;
@@ -19,9 +20,9 @@ for(i in infos) {
   if(infos[i].innerHTML) {
     let text = exInfo[infos[i].innerHTML.toLowerCase().trim()];
   infos[i].onclick = () => {
-  document.getElementById("popup").innerHTML = text;
+  document.getElementById("popup").innerHTML = text + "<br> <button onclick='closeAD()' class='w3-red'> Close </button>";
+  blurExceptPopup()
   console.log(text);
-    
   }
 }
 }
@@ -32,8 +33,13 @@ let ele = document.getElementById("popup");
 ele.innerHTML = `<p> Have a doubt? No problem Clear it out by sending a Mail to the owner of the app 
 <p> <br> <input class="w3-input" placeholder="Your Email" type="email"/> <br> <input type="text" placeholder="Your doubt" id="doubt"/>
 <button class="w3-green"> Submit </button> <button onclick="closeAD()" class="w3-red"> Close </button>`;
+
+blurExceptPopup()
+
+} 
+
+function blurExceptPopup() {
 document.getElementById("blur").style = "filter:blur(8px)";
-document.getElementById("myNavBar").style = "filter:blur(8px)";
 document.getElementById("navv").style = "filter:blur(8px)";
 
 }
@@ -41,10 +47,11 @@ document.getElementById("navv").style = "filter:blur(8px)";
 function closeAD() {
   let ele = document.getElementById("popup");
   ele.innerHTML = ''
+  unBlur()
+} 
+
+function unBlur() {
   document.getElementById("blur").style = "filter:blur(0px)";
-  document.getElementById("myNavBar").style = "filter:blur(0px)";
   document.getElementById("navv").style = "filter:blur(0px)";
 
 }
-
-
