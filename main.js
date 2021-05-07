@@ -17,10 +17,10 @@ let infos = document.getElementsByTagName("info");
 if(!infos) return console.log("No info word found");
 for(i in infos) {
   if(infos[i].innerHTML) {
-    let text = exInfo[infos[i].innerHTML.toLowerCase()];
+    let text = exInfo[infos[i].innerHTML.toLowerCase().trim()];
   infos[i].onclick = () => {
   document.getElementById("popup").innerHTML = text;
-  console.log(exInfo[text]);
+  console.log(text);
     
   }
 }
