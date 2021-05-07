@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<title>JavaScript Intro</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="ps-popup" id="popup"></div>
+    
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide" id="navv">Introduction</a>
+ 
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<div id="navI"></div>
+<!-- NAV END --> 
+<div id="blur">
+<!-- DEFINITIONS -->
+<div class="w3-container" style="padding:80px 16px;">
+  <p>
+    JavaScript is a scripting language used along with HTML to make magic happen. HTML and CSS are used to design WebPages whereas JavaScript is used to add functionality to your WebPage. 
+<br>
+  <info>consolee</info> 
+  <info>frontend</info>
+  <br>
+  For Example, It can be used to change content of your HTML consider the following code.
+  
+  <!-- DEFINITION --> 
+  <!-- EXAMPLE -->
+  
+    <div class="w3-panel w3-card w3-light-grey">
+    <div class="w3-code htmlHigh notranslate">
+      <h2> Example </h2> 
+     &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>
+      &lt;title&gt;HTML Tutorial&lt;/title&gt;<br>
+       &lt;head&gt; <br>
+        &lt;script&gt; <br>
+        function changeContent() { <br>
+        document.getElementById("id").innerHTML = "Content Changed"; <br>
+        }<br>
+         &lt;/script&gt; <br>
+          &lt;/head&gt;<br>
+        
+      &lt;body&gt;<br>
+      &lt;p id="id"&gt; Click on the button and This will be changed &lt;/p&gt;<br>
+      &lt;button onclick="changeContent()"&gt;Change&lt;/button&gt;<br>
+      &lt;/body&gt;<br>
+      &lt;/html&gt;
+    </div>
+    <!-- EXAMPLE E -->
+    
+    <!-- OUTPUT -->
+    <h2> Output </h2>
+    <div class="w3-code htmlHigh">
+      
+<html>
+  <head>
+    <script>
+    function changeContent() {
+      document.getElementById("id").innerHTML = "Content changed";
+    }
+    </script>
+  </head>
+  <body>
+    <p id = "id"> Click on the button and This will be change</p>
+    <button onclick="changeContent()"> Change </button>
+  </body>
+</html>
+</div>
+    </div>
+    <!-- OUTPUT E -->
+  </p>
+<!-- DEFINITIONS END -->
+
+<!-- FOOTER BEGIN -->
+  <div class="w3-center" style="padding-bottom: 90px;">
+
+    <button onclick="location.reload()" class="w3-button w3-red"><b> Refresh</b> </button>
+        <button onclick="askAD()" class="w3-button w3-green"> <b>
+          Ask A Doubt </b></button>
+  </div>
+ </div>
+</div>
+
+
+
+<script>
+placeItems()
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
