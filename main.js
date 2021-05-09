@@ -56,3 +56,10 @@ function unBlur() {
   document.getElementById("navv").style = "filter:blur(0px)";
 
 }
+
+function showLoading() {
+  let pop = document.getElementById('popup');
+  pop.innerHTML = ` Loading... <br>`;
+  blurExceptPopup()
+}
+
