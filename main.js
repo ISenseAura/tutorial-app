@@ -35,7 +35,7 @@ let ele = document.getElementById("popup");
 ele.innerHTML = `<p> Have a doubt? No problem Clear it out by sending a Mail to the owner of the app 
 <p> <br> <input class="w3-input" placeholder="Your Email" type="email"/> <br> <input type="text" placeholder="Your doubt" id="doubt"/>
 <button class="w3-green"> Submit </button> <button onclick="closeAD()" class="w3-red"> Close </button>`;
-
+ele.style.display = "block";
 blurExceptPopup()
 
 } 
@@ -49,6 +49,7 @@ document.getElementById("navv").style = "filter:blur(8px)";
 function closeAD() {
   let ele = document.getElementById("popup");
   ele.innerHTML = ''
+  ele.style.display = "none";
   unBlur()
 } 
 
