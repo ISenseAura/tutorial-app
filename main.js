@@ -1,10 +1,13 @@
+//Definitions about the following words must be short and easily understandable
+
 let exInfo = {
-"console" : "Enter an explanation about the word console here",
-"frontend" : "Enter an explanation about frontend here",
-"javascriptkeyword" : "Enter about JavaScript keywords",
-"keyword" : "Enter about JS Keywords",
-"compiler" : "Enter about compiler"
+  "console" : "A console is a place where all the logs about the compilation of programs are shown. A console is used by developers for debugging purposes. All the errors in the program are posted in console.",
+  "frontend" : "Information about frontend",
+  "javascriptkeyword" : "Enter about JS Keywords",
+  "keyword" : "Enter about JS Keywords",
+  "compiler" : "Enter about compiler"
 }
+
 
 function placeItems() {
 
@@ -14,6 +17,7 @@ let nav = `<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left 
   <a href="index.html" onclick="w3_close(); showLoading()" class="w3-bar-item w3-button">JS Intro</a>
   <a href="jshowto.html" onclick="w3_close(); showLoading()" class="w3-bar-item w3-button">JS How To Use</a>
    <a href="jsstatements.html" onclick="w3_close(); showLoading()" class="w3-bar-item w3-button">JS Statements</a>
+    <a href="jscomments.html" onclick="w3_close(); showLoading()" class="w3-bar-item w3-button">JS Comments</a>
 </nav> `; 
 
 document.getElementById("navI").innerHTML = nav;
@@ -24,7 +28,9 @@ for(i in infos) {
   if(infos[i].innerHTML) {
     let text = exInfo[infos[i].innerHTML.toLowerCase().trim()];
   infos[i].onclick = () => {
-  document.getElementById("popup").innerHTML = text + "<br> <button onclick='closeAD()' class='w3-red'> Close </button>";
+  let pop = document.getElementById("popup");
+  pop.style.display = "block"
+  pop.innerHTML = text + "<br> <button onclick='closeAD()' class='w3-red'> Close </button>";
   blurExceptPopup()
   console.log(text);
   }
@@ -51,7 +57,7 @@ document.getElementById("navv").style = "filter:blur(8px)";
 function closeAD() {
   let ele = document.getElementById("popup");
   ele.innerHTML = ''
-  ele.style.display = "none";
+  ele.style.display = "none"
   unBlur()
 } 
 
@@ -63,6 +69,7 @@ function unBlur() {
 
 function showLoading() {
   let pop = document.getElementById('popup');
+  pop.style.display = "block";
   pop.innerHTML = ` Loading... <br>`;
   blurExceptPopup()
 }
