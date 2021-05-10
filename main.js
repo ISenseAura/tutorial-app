@@ -1,7 +1,9 @@
 let exInfo = {
 "console" : "Enter an explanation about the word console here",
 "frontend" : "Enter an explanation about frontend here",
-"javascriptkeyword" : "Enter about JavaScript keywords"
+"javascriptkeyword" : "Enter about JavaScript keywords",
+"keyword" : "Enter about JS Keywords",
+"compiler" : "Enter about compiler"
 }
 
 function placeItems() {
