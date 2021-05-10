@@ -1,8 +1,8 @@
 //Definitions about the following words must be short and easily understandable
 
 let exInfo = {
-  "console" : "A console is a place where all the logs about the compilation of programs are shown. A console is used by developers for debugging purposes. All the errors in the program are posted in console.",
-  "frontend" : "Information about frontend",
+  "console" : "Enter about console",
+  "frontend" : "Enter about frontend",
   "javascriptkeyword" : "Enter about JS Keywords",
   "keyword" : "Enter about JS Keywords",
   "compiler" : "Enter about compiler"
