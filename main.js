@@ -1,8 +1,8 @@
 //Definitions about the following words must be short and easily understandable
 
 let exInfo = {
-  "console" : "Enter about console",
-  "frontend" : "Enter about frontend",
+  "console" : "A console is a terminal or PC or window that provides a text display and keyboard and allows overall control of the computer.",
+  "frontend" : "Front end is everything that users visually see first in their browser or application.",
   "javascriptkeyword" : "Enter about JS Keywords",
   "keyword" : "Enter about JS Keywords",
   "compiler" : "Enter about compiler"
