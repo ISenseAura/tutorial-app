@@ -10,7 +10,7 @@ The app is for mobile view only
 * Code Homepage - 20 RS
 
 
-# Credits
+## Credits
 
 W3.CSS - stylesheets 
 Zerapium - Lead Development 
