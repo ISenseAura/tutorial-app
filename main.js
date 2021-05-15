@@ -7,7 +7,7 @@ let exInfo = {
   "keyword" : "Enter about JS Keywords",
   "compiler" : "Enter about compiler",
   "string" : "Enter about string",
-  "strings" : "Enter about string,
+  "strings" : "Enter about string"
 }
 
 
