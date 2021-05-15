@@ -24,7 +24,7 @@ body, html {
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-    <div class="ps-popup" style="display:none;"id="popup"></div>
+    <div class="ps-popup" style="display:none;" id="popup"></div>
     
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <a href="#home" class="w3-bar-item w3-button w3-wide" id="navv">Introduction</a>
@@ -45,10 +45,7 @@ body, html {
 <div class="w3-container" style="padding:80px 16px;">
   <p>
     JavaScript is a scripting language used along with HTML to make magic happen. HTML and CSS are used to design WebPages whereas JavaScript is used to add functionality to your WebPage. 
-<br>
-  <info>consolee</info> 
-  <info>frontend</info>
-  <br>
+    
   For Example, It can be used to change content of your HTML consider the following code.
   
   <!-- DEFINITION --> 
@@ -111,7 +108,11 @@ body, html {
 
 
 <script>
+try {
 placeItems()
+} catch (e) {
+  alert("Try refreshing the app using the Refresh button given at the bottom");
+}
 
 function onClick(element) {
   document.getElementById("img01").src = element.src;
