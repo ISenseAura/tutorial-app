@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<title>JavaScript Variables</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="ps-popup" style="display:none;" id="popup"></div>
+    
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide" id="navv">JS Variables</a>
+ 
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<div id="navI"></div>
+<!-- NAV END --> 
+<div id="blur">
+<!-- DEFINITIONS -->
+<div class="w3-container" style="padding:80px 16px;">
+  <p>
+    JavaScript variables are containers for storing data values.
+
+In the following example, <code class="w3-codespan">x</code>, <code class="w3-codespan">y</code> and <code class="w3-codespan">z</code> are variables declared using the <code class="w3-codespan">var</code> keyword:
+  <!-- DEFINITION --> 
+  <!-- EXAMPLE -->
+  
+    <div class="w3-panel w3-card w3-light-grey">
+    <div class="w3-code jsHigh notranslate">
+      <h2> Example </h2> 
+     var x = 1; <br>
+     var y = "This is a string"; <br>
+     var z = "11"; <br>
+    </div>
+    <!-- EXAMPLE E -->
+    </div>
+  <b> Explanation :</b> In the above example,on 1st statement we created a variable using <code class="w3-codespan">var</code> <info>keyword</info> and named it <code class="w3-codespan">x</code> and assigned it a number value "1" using <code class="w3-codespan">=</code> operator. <br>
+  Similarly on 2nd and 3rd statement we created <code class="w3-codespan">y</code> and <code class="w3-codespan">z</code> variables and assigned them values. The type of variable <code class="w3-codespan">x</code> is an integer or number and type of variable <code class="w3-codespan">y</code> and <code class="w3-codespan">z</code> is a <info>String</info> or text. <br> <br> You will learn more about javascript variable types in next chapter.<br><br> 
+  
+  <b> Declaring (creating) a variable </b><br>
+  JavaScript variables can be created using <code class="w3-codespan">var</code> keyword. In the following example, we created a variable <code class="w3-codespan">x</code>. We have not assigned it value yet so technically it has a value <code class="w3-codespan">undefined</code>.
+      <!-- EXAMPLE -->
+  
+    <div class="w3-panel w3-card w3-light-grey">
+    <div class="w3-code jsHigh notranslate">
+      <h2> Example </h2> 
+     var x;
+    </div>
+    <!-- EXAMPLE E -->
+    </div>
+  
+  After creating a variable, We can assign it a value using <code class="w3-codespan">=</code> assignment operator. A variable can have many types of data values such as <info>string</info>, numbers, Array, Objects etc. you will learn about them later in the tutorial.
+  <br><br>
+  
+  <b> Naming the variable</b> <br>
+  There are some rules to follow before declaring a variable. <br>
+  1) The name of the variable must begin with a Alphabet or A dollar sign <code class="w3-codespan">$</code> or An Underscore <code class="w3-codespan">_</code>. <br>
+  2) You cannot use reserved words or keywords as a name of your variable. <br>
+  3) Variable names are case-sensitive means variables <code class="w3-codespan">y</code> and
+  <code class="w3-codespan">Y</code> are different variables.<br>
+  4) Variable names can contain letters, digits, underscores, and dollar signs only.
+  
+  <br><br>
+  
+  <b> Using let and const keywords</b> <br>
+  You can declare a variable by using 3 keywords namely <code class="w3-codespan">var</code>,
+  <code class="w3-codespan">let</code> and <code class="w3-codespan">const</code>. <br> <code class="w3-codespan">var</code> and <code class="w3-codespan">let</code> are similar keywords they have no difference but when you create a variable using the keyword <code class="w3-codespan">const</code> the value of that variable remains constant forever. 
+  
+    <!-- EXAMPLE -->
+  
+    <div class="w3-panel w3-card w3-light-grey">
+    <div class="w3-code jsHigh notranslate">
+      <h2> Example </h2> 
+     var x = 1; <br>
+     let y = "This is a string"; <br>
+     const z = "11"; <br>
+     <br>
+     x = 2; // Value of x is changed to 2 <br>
+     y = 4 // Value of y is changed to 4 <br>
+     z = 5; // This line will give you an error <br>
+     
+    </div>
+    <!-- EXAMPLE E -->
+    </div>
+  <b> Explanation : </b> in above example, when you try to change the values of variables x and y, it will be changed but when you try to change value of <code class="w3-codespan">z</code> it will not be changed because we declared the variable as a constant variable.
+  </p>
+<!-- DEFINITIONS END -->
+
+<!-- FOOTER BEGIN -->
+  <div class="w3-center" style="padding-bottom: 90px;">
+
+    <button onclick="location.reload()" class="w3-button w3-red"><b> Refresh</b> </button>
+        <button onclick="askAD()" class="w3-button w3-green"> <b>
+          Ask A Doubt </b></button>
+  </div>
+ </div>
+</div>
+
+
+
+<script>
+try {
+placeItems()
+} catch (e) {
+  alert("Try refreshing the app using the Refresh button given at the bottom");
+}
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
