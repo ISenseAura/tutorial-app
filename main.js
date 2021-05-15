@@ -76,3 +76,22 @@ function showLoading() {
   blurExceptPopup()
 }
 
+function changeLang() {
+  let langs = ["english", "hindi", "marathi"];
+let ele = document.getElementById('language');
+let lang = ele.value;
+let contents = document.getElementsByTagName(lang.trim());
+
+langs.forEach((l) => {
+  
+   let tags = document.getElementsByTagName(l);
+   for(i in tags) {
+     if(tags[i].innerHTML) tags[i].style.display = "none";
+   }
+  })
+  
+  for(i in contents) {
+    if(contents[i].innerHTML) contents[i].style.display = "block";
+  }
+
+}
