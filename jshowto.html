@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<title>JavaScript - How To</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="ps-popup" style="display:none" id="popup"></div>
+    
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide" id="navv">JS How To Use</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<div id="navI"></div>
+<!-- NAV END --> 
+<div id="blur">
+<!-- DEFINITIONS -->
+<div class="w3-container" style="padding:80px 16px;">
+  <p>
+    JavaScript can be used inside of a HTML file or outside the HTML file. To use JavaScript inside your HTML you'll have to add a <code class="w3-codespan">script</code> tag.
+
+  
+  <!-- DEFINITION --> 
+  <!-- EXAMPLE -->
+  
+    <div class="w3-panel w3-card w3-light-grey">
+    <div class="w3-code htmlHigh notranslate">
+      <h2> Example </h2> 
+     &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>
+      &lt;title&gt;HTML Tutorial&lt;/title&gt;<br>
+       &lt;head&gt; <br>
+        &lt;script&gt; <br>
+         alert("Hello World"); <br>
+         &lt;/script&gt; <br>
+          &lt;/head&gt;<br>
+        
+      &lt;body&gt;<br>
+      &lt;/body&gt;<br>
+      &lt;/html&gt;
+    </div>
+    <!-- EXAMPLE E -->
+    
+    </div>
+    <!-- OUTPUT E -->
+    Now create a file using any text editor and paste the above code inside it and save the file as "index.html" and then open the file.
+    You will get a popup window saying "Hello World" as output. <br><br>
+    You can also put your JavaScript code in a seperate file and run it into your HTML file.
+    for that we use the attribute <code class="w3-codespan">src</code>. For example ,If we wanna use a JavaScript file named "file.js" inside our HTML file and both files are in same folder then we use <code class="w3-codespan"> &lt;script src="file.js"&gt; &lt;/script&gt;</code>. inside <code class="w3-codespan">src</code> attribute there goes our file path or location. <br><br>
+   The <code class="w3-codespan">script</code> tag can be used inside the <code class="w3-codespan">head</code> or <code class="w3-codespan">body</code> tags.
+  </p>
+<!-- DEFINITIONS END -->
+
+<!-- FOOTER BEGIN -->
+  <div class="w3-center" style="padding-bottom: 90px;">
+
+    <button onclick="location.reload()" class="w3-button w3-red"><b> Refresh</b> </button>
+        <button onclick="askAD()" class="w3-button w3-green"> <b>
+          Ask A Doubt </b></button>
+  </div>
+ </div>
+</div>
+
+
+
+<script>
+placeItems()
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
