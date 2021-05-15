@@ -12,7 +12,7 @@ let exInfo = {
 
 
 function placeItems() {
-
+  
 let nav = `<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="home.html" onclick="w3_close(); showLoading()" class="w3-bar-item w3-button">HOME</a>
@@ -20,6 +20,7 @@ let nav = `<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left 
   <a href="jshowto.html" onclick="w3_close(); showLoading()" class="w3-bar-item w3-button">JS How To Use</a>
    <a href="jsstatements.html" onclick="w3_close(); showLoading()" class="w3-bar-item w3-button">JS Statements</a>
     <a href="jscomments.html" onclick="w3_close(); showLoading()" class="w3-bar-item w3-button">JS Comments</a>
+     <a href="jsvariables.html" onclick="w3_close(); showLoading()" class="w3-bar-item w3-button">JS Variables</a>   
 </nav> `; 
 
 document.getElementById("navI").innerHTML = nav;
