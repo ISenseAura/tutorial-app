@@ -34,6 +34,13 @@ body, html {
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
+
+    <select onchange="changeLang()" class="w3-bar-item w3-right w3-button" id="language">
+      <option value="english">English</option>
+      <option value="hindi">Hindi</option>
+      <option value="marathi">Marathi</option>
+    </select>
+
   </div>
 </div>
 
@@ -43,11 +50,18 @@ body, html {
 <div id="blur">
 <!-- DEFINITIONS -->
 <div class="w3-container" style="padding:80px 16px;">
-  <p>
-    JavaScript comments are those statements which are not read or executed by the program. The <info>compiler</info> totally ignores the comments in the code. <br><br>
-    A Single line comment can be created using <code class="w3-codespan">//</code>. And multi-line comments can be created in between <code class="w3-codespan">/*</code> and <code class="w3-codespan">*/</code> 
-    
-  
+  <english>
+    JavaScript comments are those statements which are not read or executed by the program. The <info>program</info> totally ignores the comments in the code. <br><br>
+    A Single line comment can be created using <code class="w3-codespan">//</code> and multi-line comments can be created in between <code class="w3-codespan">/*</code> and <code class="w3-codespan">*/</code> 
+  </english>
+  <marathi style="display:none">
+    JavaScript comments ही अशी विधाने आहेत जी प्रोग्रामद्वारे वाचली गेली नाहीत किंवा अंमलात आणली जात नाहीत. <info>program</info> कोडमधील टिप्पण्यांकडे पूर्णपणे दुर्लक्ष करते. <br><br>
+    सिंगल लाइन comments <code class="w3-codespan">//</code> वापरुन तयार केली जाऊ शकते आणि <code class="w3-codespan">/</code>  आणि  <code class="w3-codespan">/</code> च्या मध्ये बहु-लाइन comments तयार केल्या जाऊ शकतात.
+  </marathi>
+  <hindi style="display:none">
+    JavaScript comments वे statements हैं जिन्हें प्रोग्राम द्वारा पढ़ा या निष्पादित नहीं किया जाता है। <info>program</info> कोड में comments को पूरी तरह से अनदेखा करता है। <br> <br>
+    <code class="w3-codespan">//</code> का उपयोग करके सिंगल लाइन comment बनाया जा सकता है। और बहु-पंक्ति comments <code class="w3-codespan">/*</code> और <code class="w3-codespan">*/</code> के बीच में बनाई जा सकती हैं।
+  </hindi>
   <!-- DEFINITION --> 
   <!-- EXAMPLE -->
   
@@ -68,7 +82,6 @@ body, html {
     <b> Explanation </b> : In the above code, the first statement is a comment which is not executed by the program. <br> On 2nd and 3rd statements we created 2 variables and assigned them some values. <br> The code between <code class="w3-codespan">/*</code> and <code class="w3-codespan">*/</code> is multi-line comment which is also not read or executed by the program. <br> <br>
     JavaScript comments are used to explain a specific code and make it more readable.
     
-  </p>
 <!-- DEFINITIONS END -->
 
 <!-- FOOTER BEGIN -->
