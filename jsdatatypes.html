@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<title>JavaScript Variables</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="ps-popup" style="display:none;" id="popup"></div>
+    
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide" id="navv">JS Data Types</a>
+ 
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<div id="navI"></div>
+<!-- NAV END --> 
+<div id="blur">
+<!-- DEFINITIONS -->
+<div class="w3-container" style="padding:80px 16px;">
+  <p>
+    JavaScript variables can hold different types of data values. Some of the main types are given below.
+    <ul>
+      <li>String</li>
+      <li>Number</li>
+      <li>Boolean</li>
+      <li>Array</li>
+      <li>Object</li>
+    </ul>
+    <b> ● Strings and Numbers (Integers)</b> <br>
+    Strings are simply text values ,anything in the code inside Double <code class="w3-codespan">" "</code> or single quotes  <code class="w3-codespan">' '</code> is String. <br>
+    Numbers are without the Double or Single quotations. 
+    
+    
+    
+
+In the following example, <code class="w3-codespan">x</code>, <code class="w3-codespan">y</code> and <code class="w3-codespan">z</code> are variables declared using the <code class="w3-codespan">var</code> keyword:
+  <!-- DEFINITION --> 
+  <!-- EXAMPLE -->
+  
+    <div class="w3-panel w3-card w3-light-grey">
+    <div class="w3-code jsHigh notranslate">
+      <h2> Example </h2> 
+     var x = 1; // Type of variable x is a number<br>
+     var y = "This is a string"; // Type of variable y is a string<br>
+     var z = "11"; // This is also a string<br>
+    </div>
+    <!-- EXAMPLE E -->
+    </div>
+  <b> Explanation :</b> In the above example,on 1st statement we created a variable using <code class="w3-codespan">var</code> <info>keyword</info> and named it <code class="w3-codespan">x</code> and assigned it a number value "1" using <code class="w3-codespan">=</code> operator. <br>
+  Similarly on 2nd and 3rd statement we created <code class="w3-codespan">y</code> and <code class="w3-codespan">z</code> variables and assigned them values. The type of variable <code class="w3-codespan">x</code> is an integer or number and type of variable <code class="w3-codespan">y</code> and <code class="w3-codespan">z</code> is a <info>String</info> or text. <br>
+  variable z is a String because it's value is inside the Double quotes; <br><br>
+  <b>NOTE : </b>If we add variable <code class="w3-codespan">x</code> and <code class="w3-codespan">z</code> using <code class="w3-codespan">+</code> addition operator then the result will be "111" not "12", Because we are adding a Number and String so Number "1" will not be added in "11" but it will be joined together. <ins>When adding a number and a string, JavaScript will treat the number as a string.
+ </ins> <br> <br>
+  You will learn more about operators in Next Chapters. <br><br>
+  
+  <b> ● Boolean (True or False)</b><br>
+  Boolean is a special data type which has only 2 values <code class="w3-codespan">True</code> and <code class="w3-codespan">False</code>. The Numeric value of <code class="w3-codespan">True</code> is 1 and <code class="w3-codespan">False</code> is 0. <br>
+  Booleans are often used in conditional testing. You will learn about conditional testing later in the tutorial
+      <!-- EXAMPLE -->
+  
+    <div class="w3-panel w3-card w3-light-grey">
+    <div class="w3-code jsHigh notranslate">
+      <h2> Example </h2> 
+     var x = 2; <br>
+     var y = 3; <br>
+     <br>
+     x == y // returns False <br>
+     x == y - 1 // returns True<br>
+    </div>
+    <!-- EXAMPLE E -->
+    </div>
+  
+  In the above example, <code class="w3-codespan">==</code> is a <code class="w3-codespan">equal to</code>operator which checks if the 2 values are equal or not. On the 4th statement, The value of <code class="w3-codespan">x == y</code>
+   is false because 2 is not equals 3.
+   <br><br>
+   Booleans are just True or False values ,there is nothing more to know about them.
+   <br><br>
+  
+  <b> ● Arrays </b> <br>
+  Arrays are like list or like a Set in Mathematics. An Array is a Set of elements. An Array can be created using the square brackets <code class="w3-codespan">[ element1, element2, element3]</code>. These elements in an array can be of any Data Type.
+    <!-- EXAMPLE -->
+  
+    <div class="w3-panel w3-card w3-light-grey">
+    <div class="w3-code jsHigh notranslate">
+      <h2> Example </h2> 
+     let myArray = ["This is a string", 10, True, "Hello"]; <br><br>
+     let x = myArray[0] // Here x = "This is a string"
+    </div>
+    <!-- EXAMPLE E -->
+    </div>
+  <b> Explanation : </b> in above example, On first statement we created an <code class="w3-codespan">Array</code> and named it <code class="w3-codespan">myArray</code>. It has elements of different data types. <br>
+  on the 2nd statement ,We accessed the value of the first element from the Array and assigned the value to the variable <code class="w3-codespan">x</code>.
+  <br><br>
+  <b> Accessing the elements in an Array</b> <br>
+  Each element in an Array has an index value using which we can access a specific element from the array. Indexing of elements starts from "0". To access a specific element we use <code class="w3-codespan">myArray[index of element]</code>.For example, if we want to access 3rd element of an Array <code class="w3-codespan">myArray</code> we will do <code class="w3-codespan">myArray[2]</code> because 2 is the index of 3rd element. 1 is the index of 2nd element and 0 is the index of 1st element<br>
+  
+  <br>
+  <b> ● Objects </b>
+  <br>
+  JavaScript objects are written with curly braces <code class="w3-codespan">{}</code>.
+  <br>
+
+Object properties are written as <code class="w3-codespan">name:value</code> pairs, separated by commas. 
+
+  <div class="w3-panel w3-card w3-light-grey">
+  <div class="w3-code jsHigh notranslate">
+    <h2> Example </h2>
+    
+    let person = { <br>
+    name : "Mayur ", <br>
+    surname : "Hiwale", <br>
+    age : 17, <br>
+    skills : ["JavaScript", "Python", "C++"] <br>
+    }<br><br>
+    // Person is an Object <br>
+    alert(person.name) // This will print "Mayur" <br>
+    alert(person.surname) // This will print "Hiwale" <br>
+    alert(person.name + person.surname) // This will print "Mayur Hiwale"
+    
+  </div>
+  <button class="w3-button w3-green" onclick="openEditor()"> Try It </button>
+  <!-- EXAMPLE E -->
+  </div>
+  <b>Explanation : </b>In the above code ,<code class="w3-codespan">person</code> is an Object which has properties <code class="w3-codespan">name, surname, age, skills</code>. An Object property can hold any kind of data value. <br>
+  on the 9th statement we accessed the <code class="w3-codespan">name</code> property of person object. To access Object properties and it's values we use a dot <code class="w3-codespan">.</code>. We do it like <code class="w3-codespan">Object.property</code> this will give you the value of the property.
+  <br>
+<br> <b> Object Methods</b> <br>
+Objects can have properties as well as methods. Methods are like functions of the object.<br>
+You will learn more about functions in Functions chapter
+<br><br>
+<b> ● undefined type</b> <br>
+In JavaScript, a variable without a value, has the value <code class="w3-codespan">undefined</code>. The type is also <code class="w3-codespan">undefined</code>
+<br><br>
+<b> ● null type</b> <br>
+In JavaScript <code class="w3-codespan">null</code> is "nothing". It is supposed to be something that doesn't exist.
+
+Unfortunately, in JavaScript, the data type of <code class="w3-codespan">null</code> is an object.
+ <br><br>
+ 
+ <b>● typeof operator</b> <br>
+ The <code class="w3-codespan">typeof</code> operator is used to find the type of variables.
+ The <code class="w3-codespan">typeof</code> operator returns the type of a variable or an expression.
+   <div class="w3-panel w3-card w3-light-grey">
+  <div class="w3-code jsHigh notranslate">
+    <h2> Example </h2>
+    let a = "Hello"; <br>
+    let b = 12; <br>
+    let c = ["How" ," Are", "You"];<br>
+    let d = { <br>
+    something : "This is a property", <br>
+    methodExample : function() { <br>
+    alert("this is a method") <br>
+    } <br>
+    }<br>
+    let e = undefined;<br>
+    let f = null; <br><br>
+    
+    alert("Type of a is " + typeof a); <br>
+    alert("Type of b is " + typeof b); <br>
+    alert("Type of c is " + typeof c); <br>
+    alert("Type of d is " + typeof d); <br>
+    alert("Type of e is " + typeof e); <br>
+    alert("Type of f is " + typeof f); <br>
+    
+  </div>
+  <button class="w3-button w3-green" onclick="openEditor()"> Try It </button>
+  <!-- EXAMPLE E -->
+  </div>
+  <b>NOTE : </b> type of an Array is also an Object. index of an element in an Array is the property name of the Object and value of an element in an Array is the property value of the Object. <br>
+  Conclusion type of Array is also an Object.
+  </p>
+<!-- DEFINITIONS END -->
+
+ <div class="w3-center" style="padding-bottom: 90px;">
+<small>
+    <button onclick="location.reload()" class="w3-button w3-red"><b> Refresh</b> </button>
+    
+        <button onclick="askAD()" class="w3-button w3-green"> <b>
+          Ask A Doubt </b></button>
+              <button onclick="srp(document.title)" class="w3-button w3-yellow"> <b>See Related Practices</b></button>
+ </small>
+  </div>
+ </div>
+</div>
+
+
+
+<script>
+try {
+placeItems()
+} catch (e) {
+  alert("Try refreshing the app using the Refresh button given at the bottom");
+}
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
