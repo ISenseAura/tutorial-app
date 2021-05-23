@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<title>JavaScript Operators</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="ps-popup" style="display:none;" id="popup"></div>
+    
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide" id="navv">JS Operators</a>
+ 
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+    
+    <select onchange="changeLang()" class="w3-bar-item w3-right w3-button" id="language">
+      <option value="english">English</option>
+      <option value="hindi">Hindi</option>
+      <option value="marathi">Marathi</option>
+    </select>
+    
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<div id="navI"></div>
+<!-- NAV END --> 
+<div id="blur">
+<!-- DEFINITIONS -->
+<div class="w3-container" style="padding:80px 16px;">
+
+
+  <!-- DEFINITION --> 
+  <!-- EXAMPLE -->
+  <english>
+    consider <code class="w3-codespan">a + b</code> here "a" and "b" are Operands and "+" is an operator. Operators are used to perform operations on Variables. 
+  There are 5 types of Operators :
+    <ul>
+      <li>Arithmatic Operators </li>
+      <li> Assignment Operators</li>
+      <li> Comparison Operators</li>
+      <li> Logical Operators</li>
+      <li> Type Operators </li>
+    </ul>
+  <br>
+  <b> Arithmatic Operators </b> <br>
+  </english>
+    <div class="w3-panel w3-card w3-light-grey">
+    <div class="w3-code jsHigh notranslate">
+      <h2> Example </h2> 
+     var x = 2; <br>
+     var y = 5; <br>
+     var z = x + y; // Therefore z = 7; <br>
+     <br>
+     z = x - y; // Now z = -3 <br>
+     z = x * y; // Now z = 10 <br>
+     z = x / y; // Now z = 0.4 <br>
+     z = x % y; // Now z = 2 <br>
+     z = x++; // Now z = 3 <br>
+     z = x--; // Now z = 1 
+    </div>
+    <!-- EXAMPLE E -->
+    </div>
+    <!-- OUTPUT E -->
+    
+      <english>
+        <code class="w3-codespan">=</code> is an assignment operator which assigns values to variables. In 3rd statement we assigned the value of <code class="w3-codespan">x + y</code> which is 7 to the variable <code class="w3-codespan">z</code> 
+        <br> <br>
+        </english>
+        <table class="w3-table w3-striped w3-medium w3-border w3-bordered">
+          <tr>
+            <td> <b> Operator <b></b> </td>
+            <td> <b> Name </b> </td>
+            <td> <b>Definition </b></td>
+          </tr>
+          <tr>
+             <td class="w3-large"> <big><code class="w3-codespan">+</code></big>
+             </td>
+             <td> Addition </td>
+             <td> Adds two or more variables </td>
+           </tr>
+           <tr>
+             <td class="w3-large"> <big><code class="w3-codespan">-</code></big>
+             </td>
+             <td> Substraction </td>
+             <td> Substracts two or more variables </td>
+           </tr>
+           <tr>
+             <td class="w3-large"> <big><code class="w3-codespan">*</code></big>
+             </td>
+             <td> Multiplication </td>
+             <td> Multiplies two or more variables </td>
+           </tr>
+           <tr>
+             <td class="w3-large"> <big><code class="w3-codespan">-</code></big>
+             </td>
+             <td> Division </td>
+             <td> Divides two or more variables </td>
+           </tr>
+           <tr>
+             <td class="w3-large"> <big><code class="w3-codespan">%</code></big>
+             </td>
+             <td> Modulus </td>
+             <td> Gives remainder of Division of 2 variables </td>
+           </tr>
+           <tr>
+             <td class="w3-large"> <big><code class="w3-codespan">++</code></big>
+             </td>
+             <td> Increment </td>
+             <td> Increases value of a variable by 1; Uses : x++</td>
+           </tr>
+           <tr>
+             <td class="w3-large"> <big><code class="w3-codespan">--</code></big>
+             </td>
+             <td> Decrement </td>
+             <td> Decreases value of a variable by 1; Uses : x--</td>
+           </tr>
+           
+        </table>
+        <br>
+        <english>
+          <code class="w3-codespan">x++</code> adds 1 into <code class="w3-codespan">x</code> variable. It's like doing <code class="w3-codespan">x = x + 1</code>
+          
+         
+        <br><br>
+        <english>
+          <b>Assignment Operators</b> <br>
+          Assignment operators assign values to JavaScript varibales
+          
+        </english>
+              <table class="w3-table w3-striped w3-medium w3-border w3-bordered">
+          <tr>
+            <td> <b> Operator <b></b> </td>
+            <td> <b> Function </b> </td>
+            <td> <b>Example </b></td>
+            <td> <b>Same As </b></td>
+          </tr>
+          <tr>
+             <td class="w3-large"> <big><code class="w3-codespan">=</code></big>
+             </td>
+             <td> Assigns Value</td>
+             <td> x = 1 </td>
+             <td> x = 1 </td>             
+           </tr>
+           <tr>
+             <td class="w3-large"> <big><code class="w3-codespan">+=</code></big>
+             </td>
+             <td> Adds then Assigns value </td>
+             <td> x += 1</td>
+             <td> x = x + 1 </td>             
+           </tr>
+           <tr>
+             <td class="w3-large"> <big><code class="w3-codespan">*=</code></big>
+             </td>
+             <td> Multiplies then Assigns value </td>
+             <td> x *= 2 </td>
+              <td> x = x * 2 </td>           
+           </tr>
+           <tr>
+             <td class="w3-large"> <big><code class="w3-codespan">/=</code></big>
+             </td>
+             <td> Divides then Assigns value </td>
+             <td> x /= 2 </td>
+             <td> x = x / 2 </td>             
+           </tr>
+           <tr>
+             <td class="w3-large"> <big><code class="w3-codespan">%=</code></big>
+             </td>
+             <td> Modulus then Assigns value </td>
+             <td> x %= 2 </td>
+             <td> x = x % 1 </td>             
+           </tr>
+        </table>
+        <br>
+        <!--- Examples -->
+           <div class="w3-panel w3-card w3-light-grey">
+             <div class="w3-code jsHigh notranslate">
+               <h2> Example </h2>
+               var x = 2; <br> <br>
+               <br>
+               x += 1; // value of x is now 3 <br>
+               x -= 1; // value of x is now 1;<br>
+               x *= 2; // value of x is now 4; <br>
+               x /= 2; // value of x is now 1; <br>
+               x %= 2; // value of x is now 0; <br>
+               // Above code is same as following code <br>
+               x = x + 1; // Now x = 3 <br>
+               x = x - 1; // Now x = 1 <br>
+               x = x * 2; // Now x = 4 <br>
+               x = x / 2; // Now x = 1<br>
+               x = x % 2; // Now x = 0 <br>
+              
+             </div>
+             <!-- EXAMPLE E -->
+           </div>
+           <english>
+             consider <code class="w3-codespan">x += 2</code> this can also be written as <code class="w3-codespan">x = x + 2</code> so here The final value of <code class="w3-codespan">x</code> is x + 2
+             
+              <br><br>
+              <b> NOTE : </b> <code class="w3-codespan">
+                  +</code> operator can also be used on Strings. It is used to join (concatenate) two or more strings
+                </english>
+                <div class="w3-panel w3-card w3-light-grey">
+                  <div class="w3-code jsHigh notranslate">
+                    <h2> Example </h2>
+                    var x = "Hello "; <br>
+                    var y = "World"; <br>
+                    var z = x + y; // Therefore z = "Hello World" <br><br>
+                    
+                    z = x + "23"; // Now z = "Hello 23" <br>
+                    x += "There" // Now x = "Hello There" <br>
+                    z = x + 23 // Now z = "Hello 23"
+                  </div>
+                  <!-- EXAMPLE E -->
+                </div>
+             In the above example ,On the last statement we are adding variable <code class="w3-codespan">x</code> which has a String value "Hello " into a Number value "23" and the resultant value of this operation is "Hello 23" which is also a String. When we add a number to a string JavaScript treats the number as string.
+             <br><br>
+             <b> Remaining operators will be covered in <a href="jsoperators2.html">JS Operators 2</a></b> <br><br>
+           </english>
+           
+           
+    
+<!-- DEFINITIONS END -->
+
+<!-- FOOTER BEGIN -->
+  <div class="w3-center" style="padding-bottom: 90px;">
+<small>
+    <button onclick="location.reload()" class="w3-button w3-red"><b> Refresh</b> </button>
+    
+        <button onclick="askAD()" class="w3-button w3-green"> <b>
+          Ask A Doubt </b></button>
+              <button onclick="srp(document.title)" class="w3-button w3-yellow"> <b>See Related Practices</b></button>
+ </small>
+  </div>
+ </div>
+</div>
+
+
+
+<script>
+try {
+placeItems()
+} catch (e) {
+  alert("An Error occured, Try refreshing the app using the Refresh button given at the bottom");
+}
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
