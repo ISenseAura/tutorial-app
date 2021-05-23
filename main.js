@@ -1,13 +1,13 @@
 //Definitions about the following words must be short and easily understandable
 
 let exInfo = {
-  "console" : "A console is a terminal or PC or window that provides a text display and keyboard and allows overall control of the computer.",
-  "frontend" : "Front end is everything that users visually see first in their browser or application.",
+  "console" : "A console is a place where all the logs about the compilation of programs are shown. A console is used by developers for debugging purposes. All the errors in the program are posted in console.",
+  "frontend" : "Information about frontend",
   "javascriptkeyword" : "Enter about JS Keywords",
   "keyword" : "Enter about JS Keywords",
   "compiler" : "Enter about compiler",
-  "string" : "Enter about string",
-  "strings" : "Enter about string"
+   "string" : "About Strings",
+"strings" : " About strings "
 }
 
 
@@ -55,6 +55,29 @@ function blurExceptPopup() {
 document.getElementById("blur").style = "filter:blur(8px)";
 document.getElementById("navv").style = "filter:blur(8px)";
 
+}
+
+
+
+
+function openEditor(doc) {
+ // let code = document.getElementById(doc);
+ // code = code.innerHTML.split("<br>").join("\n")
+  let ele = document.getElementById("popup");
+  
+  ele.innerHTML = `<p><center><b>JavaScript Playground</b></center> <br> Copy the code and paste it here <br> NOTE : use <code class="w3-codespan">alert("output")</code> To get an output<br><br><textarea style="width:100%;height:330px;" id="edt" ></textarea><br><button onclick="runEdt()" class="w3-button w3-green">Run</button> <button onclick="closeAD()" class="w3-button w3-red">Close </button></p>`;
+  ele.style.display = "block";
+  
+  blurExceptPopup();
+}
+
+function runEdt() {
+  let ev = document.getElementById("edt");
+  try {
+    eval(ev.value);
+  } catch (e) {
+    alert("[ AN ERROR OCCURED WHILE RUNNING ] : " + e)
+  }
 }
 
 function closeAD() {
