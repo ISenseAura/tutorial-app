@@ -34,6 +34,13 @@ body, html {
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
+    
+    <select onchange="changeLang()" class="w3-bar-item w3-right w3-button" id="language">
+      <option value="english">English</option>
+      <option value="hindi">Hindi</option>
+      <option value="marathi">Marathi</option>
+    </select>
+    
   </div>
 </div>
 
@@ -43,11 +50,17 @@ body, html {
 <div id="blur">
 <!-- DEFINITIONS -->
 <div class="w3-container" style="padding:80px 16px;">
-  <p>
+  <english>
     A computer program is a list of "instructions" to be "executed" by a computer.
-In a programming language, these programming instructions are called statements.
-A JavaScript program is a list of programming statements.
-  
+    In a programming language, these programming instructions are called statements.
+    A JavaScript program is a list of programming statements.
+  </english>
+  <marathi style="display:none"> 
+    संगणक प्रोग्राम संगणकाद्वारे "कार्यान्वित" करण्याच्या "सूचना" ची यादी असते. प्रोग्रामिंग भाषेत या प्रोग्रामिंग निर्देशांना स्टेटमेंट्स म्हणतात. JavaScript प्रोग्राम प्रोग्रामिंग स्टेटमेंट्सची सूची आहे.
+  </marathi>
+  <hindi style="display:none"> 
+    एक कंप्यूटर प्रोग्राम एक कंप्यूटर द्वारा "निष्पादित" किए जाने वाले "निर्देशों" की एक सूची है। एक प्रोग्रामिंग भाषा में, इन प्रोग्रामिंग निर्देशों को स्टेटमेंट कहा जाता है। एक JavaScript प्रोग्राम प्रोग्रामिंग स्टेटमेंट की एक सूची है।
+  </hindi>
   <!-- DEFINITION --> 
   <!-- EXAMPLE -->
   
@@ -61,16 +74,33 @@ A JavaScript program is a list of programming statements.
     </div>
     </div>
     <!-- EXAMPLE E -->
+  <english>
     <b> Explanation </b> : In the above code, on first statement we created three variables using <code class="w3-codespan">var</code> <info>keyword</info>. In 2nd, 3rd and 4th statements we assigned values to those variables using <code class="w3-codespan">=</code> assignment operator. <br> <br>
     JavaScript statements in a program are seperated by semicolons <code class="w3-codespan">;</code>. When separated by semicolons, multiple statements on one line are allowed:
-   <div class="w3-panel w3-card w3-light-grey">
+  </english>
+  <marathi style="display:none">
+    <b> स्पष्टीकरण </b> : वरील कोडमध्ये, प्रथम विधानानुसार आम्ही <code class="w3-codespan">var</code> <info>keyword</info> वापरून तीन variables तयार केले. दुसर्‍या, तिसर्‍या आणि चौथ्या स्टेटमेंटमध्ये आम्ही <code class="w3-codespan">=</code> असाइनमेंट ऑपरेटर वापरुन त्या व्हेरिएबल्सना values नियुक्त केली. <br> <br>
+     प्रोग्राममधील JavaScript स्टेटमेंट्स अर्धविराम <code class="w3-codespan">;</code> द्वारे विभक्त केलेली आहेत. अर्धविरामांनी वेगळं केल्यावर, एका ओळीवर एकाधिक विधानांना परवानगी आहे:
+  </marathi>
+  <hindi style="display:none">
+    <b> Explanation </b> : उपरोक्त कोड में, पहले स्टेटमेंट पर हमने <code class="w3-codespan">var</code> <info>keyword</info> का उपयोग करके तीन वेरिएबल बनाए। दूसरे, तीसरे और चौथे स्टेटमेंट में हमने <code class = "w3-codespan"> = </code> असाइनमेंट ऑपरेटर का उपयोग करके उन वेरिएबल्स को वैल्यू असाइन की। <br> <br>
+    किसी प्रोग्राम में JavaScript स्टेटमेंट को अर्धविराम से अलग किया जाता है <code class = "w3-codespan">; </code>। अर्धविराम द्वारा अलग किए जाने पर, एक पंक्ति पर एकाधिक कथनों की अनुमति है:
+  </hindi>
+    <div class="w3-panel w3-card w3-light-grey">
      <div class="w3-code jsHigh notranslate">
        <h2> Example </h2>
       var a = 1; var b = 2; var c = 3;
      </div>
    </div>
-   There are 3 statements in the above code seperated by a semicolon on one line; 
-  </p>
+  <english>
+    There are 3 statements in the above code seperated by a semicolon on one line.
+  </english>
+  <marathi style="display:none">
+    उपरोक्त कोडमध्ये एक ओळ वर अर्धविराम विभक्त 3 स्टेटमेन्ट्स आहेत.
+  </marathi>
+  <hindi style="display:none">
+    उपरोक्त कोड में एक पंक्ति पर अर्धविराम द्वारा अलग किए गए 3 कथन हैं.
+  </hindi>  
 <!-- DEFINITIONS END -->
 
 <!-- FOOTER BEGIN -->
