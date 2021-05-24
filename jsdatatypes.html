@@ -34,6 +34,13 @@ body, html {
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
+    
+    <select onchange="changeLang()" class="w3-bar-item w3-right w3-button" id="language">
+      <option value="english">English</option>
+      <option value="hindi">Hindi</option>
+      <option value="marathi">Marathi</option>
+    </select>
+    
   </div>
 </div>
 
@@ -43,7 +50,7 @@ body, html {
 <div id="blur">
 <!-- DEFINITIONS -->
 <div class="w3-container" style="padding:80px 16px;">
-  <p>
+  <english>
     JavaScript variables can hold different types of data values. Some of the main types are given below.
     <ul>
       <li>String</li>
@@ -56,10 +63,38 @@ body, html {
     Strings are simply text values ,anything in the code inside Double <code class="w3-codespan">" "</code> or single quotes  <code class="w3-codespan">' '</code> is String. <br>
     Numbers are without the Double or Single quotations. 
     
+    In the following example, <code class="w3-codespan">x</code>, <code class="w3-codespan">y</code> and <code class="w3-codespan">z</code> are variables declared using the <code class="w3-codespan">var</code> keyword:
+  </english>
+  <marathi style="display:none">
+    जावास्क्रिप्ट व्हेरिएबल्स विविध प्रकारचे डेटा मूल्य ठेवू शकतात. काही मुख्य प्रकार खाली दिले आहेत.
+    <ul>
+      <li>String</li>
+      <li>Number</li>
+      <li>Boolean</li>
+      <li>Array</li>
+      <li>Object</li>
+    </ul>
+    <b> ● Strings and Numbers (Integers)</b> <br>
+    Strings म्हणजे फक्त मजकूर मूल्ये, डबल <code class="w3-codespan">" "</code> किंवा एकल कोट्स <code class="w3-codespan">' '</code> String आहे. <br>
+    संख्या दुहेरी किंवा एकल कोटेशनशिवाय आहेत.
     
+    खालील उदाहरणात, <code class="w3-codespan">x</code>, <code class="w3-codespan">y</code> <code class="w3-codespan">z</code> हे <code class="w3-codespan">var</code> कीवर्ड वापरून घोषित केलेले चल आहेत.
+  </marathi>
+  <hindi style="display:none">
+    जावास्क्रिप्ट variables विभिन्न प्रकार के डेटा मान रख सकते हैं। कुछ मुख्य प्रकार नीचे दिए गए हैं।
+    <ul>
+      <li>String</li>
+      <li>Number</li>
+      <li>Boolean</li>
+      <li>Array</li>
+      <li>Object</li>
+    </ul>
+    <b> ● Strings and Numbers (Integers)</b> <br>
+    स्ट्रिंग्स केवल टेक्स्ट मान हैं, डबल <code class="w3-codespan">" "</code> या सिंगल कोट्स <code class="w3-codespan">' '</code> के अंदर कोड में कुछ भी स्ट्रिंग है। <br>
+    नंबर डबल या सिंगल कोटेशन के बिना हैं।
     
-
-In the following example, <code class="w3-codespan">x</code>, <code class="w3-codespan">y</code> and <code class="w3-codespan">z</code> are variables declared using the <code class="w3-codespan">var</code> keyword:
+    निम्नलिखित उदाहरण में, <code class="w3-codespan">x</code>, <code class="w3-codespan">y</code> और <code class="w3-codespan">z</कोड> में code> वेरिएबल हैं जिन्हें <code class="w3-codespan">var</code> कीवर्ड का उपयोग करके घोषित किया गया है:
+  </hindi>
   <!-- DEFINITION --> 
   <!-- EXAMPLE -->
   
@@ -72,16 +107,42 @@ In the following example, <code class="w3-codespan">x</code>, <code class="w3-co
     </div>
     <!-- EXAMPLE E -->
     </div>
-  <b> Explanation :</b> In the above example,on 1st statement we created a variable using <code class="w3-codespan">var</code> <info>keyword</info> and named it <code class="w3-codespan">x</code> and assigned it a number value "1" using <code class="w3-codespan">=</code> operator. <br>
-  Similarly on 2nd and 3rd statement we created <code class="w3-codespan">y</code> and <code class="w3-codespan">z</code> variables and assigned them values. The type of variable <code class="w3-codespan">x</code> is an integer or number and type of variable <code class="w3-codespan">y</code> and <code class="w3-codespan">z</code> is a <info>String</info> or text. <br>
-  variable z is a String because it's value is inside the Double quotes; <br><br>
-  <b>NOTE : </b>If we add variable <code class="w3-codespan">x</code> and <code class="w3-codespan">z</code> using <code class="w3-codespan">+</code> addition operator then the result will be "111" not "12", Because we are adding a Number and String so Number "1" will not be added in "11" but it will be joined together. <ins>When adding a number and a string, JavaScript will treat the number as a string.
- </ins> <br> <br>
-  You will learn more about operators in Next Chapters. <br><br>
+  <english>
+    <b> Explanation :</b> In the above example,on 1st statement we created a variable using <code class="w3-codespan">var</code> <info>keyword</info> and named it <code class="w3-codespan">x</code> and assigned it a number value "1" using <code class="w3-codespan">=</code> operator. <br>
+    Similarly on 2nd and 3rd statement we created <code class="w3-codespan">y</code> and <code class="w3-codespan">z</code> variables and assigned them values. The type of variable <code class="w3-codespan">x</code> is an integer or number and type of variable <code class="w3-codespan">y</code> and <code class="w3-codespan">z</code> is a <info>String</info> or text. <br>
+    variable z is a String because it's value is inside the Double quotes; <br><br>
+    <b>NOTE : </b> If we add variable <code class="w3-codespan">x</code> and <code class="w3-codespan">z</code> using <code class="w3-codespan">+</code> addition operator then the result will be "111" not "12", Because we are adding a Number and String so Number "1" will not be added in "11" but it will be joined together. <ins>When adding a number and a string, JavaScript will treat the number as a string.
+    </ins> <br> <br>
+    You will learn more about operators in Next Chapters. <br><br>
   
-  <b> ● Boolean (True or False)</b><br>
-  Boolean is a special data type which has only 2 values <code class="w3-codespan">True</code> and <code class="w3-codespan">False</code>. The Numeric value of <code class="w3-codespan">True</code> is 1 and <code class="w3-codespan">False</code> is 0. <br>
-  Booleans are often used in conditional testing. You will learn about conditional testing later in the tutorial
+    <b> ● Boolean (True or False)</b><br>
+    Boolean is a special data type which has only 2 values <code class="w3-codespan">True</code> and <code class="w3-codespan">False</code>. The Numeric value of <code class="w3-codespan">True</code> is 1 and <code class="w3-codespan">False</code> is 0. <br>
+    Booleans are often used in conditional testing. You will learn about conditional testing later in the tutorial.
+  </english>
+  <marathi style="display:none">
+    <b> स्पष्टीकरण :</b> वरील उदाहरणात, पहिल्या विधानावर आम्ही <code class="w3-codespan">var</code> <info>keyword</info> वापरून व्हेरिएबल तयार केले आणि त्यास <code class="w3-codespan">x</code> असे नाव दिले आणि <code class="w3-codespan">=</code> ऑपरेटर वापरून "1" क्रमांकाचे मूल्य निर्दिष्ट केले. <br>
+    त्याचप्रमाणे दुसर्‍या आणि तिसर्‍या स्टेटमेंटवर आम्ही <code class="w3-codespan">y</code> आणि <code class="w3-codespan">z</code> व्हेरिएबल्स तयार केली आणि त्यांना व्हॅल्यूज दिली. <code class="w3-codespan">x</code> चा प्रकार एक पूर्णांक किंवा संख्या आणि व्हेरिएबलचा प्रकार आहे <code class="w3-codespan">y</code> आणि <code class="w3-codespan">z</code> <info>String</info> किंवा मजकूर आहे. <br>
+    व्हेरिएबल z ही एक स्ट्रिंग आहे कारण त्याचे मूल्य डबल कोट्समध्ये आहे;
+    <b>NOTE : </b> आम्ही <code class="w3-codespan">x</code> आणि <code class="w3-codespan">z</code> <code class="w3-codespan">+</code> वापरत असल्यास चल जोडल्यास अतिरिक्त ऑपरेटर नंतर निकाल "111" आहे "12" नाही, कारण आम्ही संख्या जोडत आहोत आणि स्ट्रिंग म्हणून संख्या "1" "11" मध्ये जोडली जाणार नाही परंतु ती एकत्र जोडली जाईल. <ins> नंबर आणि स्ट्रिंग जोडताना, जावास्क्रिप्ट नंबरला स्ट्रिंग समजेल.
+    </ins> <br> <br>
+    आपण पुढील अध्यायांमध्ये ऑपरेटरबद्दल अधिक जाणून घ्याल. <br><br>
+    
+    <b> ● Boolean (True or False)</b><br>
+    Boolean हा एक विशिष्ट डेटा प्रकार आहे ज्यामध्ये केवळ 2 मूल्ये <code class="w3-codespan">True</code> आणि <code class="w3-codespan">False</code> आहे. <code class="w3-codespan">True</code> चे सांख्यिकीय मूल्य 1 आणि <code class="w3-codespan">False</code> 0 आहे.
+    सशर्त चाचणीमध्ये बुलन्सचा वापर वारंवार केला जातो. ट्यूटोरियल मध्ये आपण सशर्त चाचणी बद्दल शिकू शकाल.
+  </marathi>
+  <hindi style="display:none">
+    <b> Explanation :</b> उपरोक्त उदाहरण में, पहले स्टेटमेंट पर हमने <code class="w3-codespan">var</code> <info>keyword</info> का उपयोग करके एक वेरिएबल बनाया और इसे <code class="w3-codespan">x</code> नाम दिया और इसे <code class="w3-codespan">=</code> ऑपरेटर का उपयोग करके एक संख्या मान "1" असाइन किया। <br>
+    इसी तरह दूसरे और तीसरे स्टेटमेंट पर हमने <code class="w3-codespan">y</code> और <code class="w3-codespan">z</code> वेरिएबल बनाए और उन्हें वैल्यू असाइन की। चर का प्रकार <code class="w3-codespan">x</code> एक पूर्णांक या संख्या और चर का प्रकार है <code class="w3-codespan">y</code> और <code class="w3 -codespan">z</code> एक <info>String</info> या टेक्स्ट है। <br>
+    वेरिएबल z एक स्ट्रिंग है क्योंकि इसका मान डबल कोट्स के अंदर है; <br><br>
+    <b>NOTE : </b> यदि हम <code class="w3-codespan">x</code> और <code class="w3-codespan">z</code> वैरिएबल को <code class="w3-codespan">+</code> का उपयोग करके जोड़ते हैं जोड़ ऑपरेटर तो परिणाम "111" होगा "12" नहीं, क्योंकि हम एक संख्या और स्ट्रिंग जोड़ रहे हैं इसलिए संख्या "1" को "11" में नहीं जोड़ा जाएगा लेकिन इसे एक साथ जोड़ा जाएगा। <ins>एक संख्या और एक स्ट्रिंग जोड़ते समय, जावास्क्रिप्ट संख्या को एक स्ट्रिंग के रूप में मानेगा।
+    </ins> <br> <br>
+    आप अगले अध्यायों में ऑपरेटरों के बारे में और जानेंगे। <br><br>
+    
+    <b> ● Boolean (True or False)</b><br>
+    Boolean एक विशेष डेटा प्रकार है जिसमें केवल 2 मान होते हैं <code class="w3-codespan">True</code> और <code class="w3-codespan">False</code>। <code class="w3-codespan">True</code> का अंकीय मान 1 है और <code class="w3-codespan">False</code> 0 है। <br>
+    Boolean अक्सर सशर्त परीक्षण में उपयोग किए जाते हैं। आप ट्यूटोरियल में बाद में सशर्त परीक्षण के बारे में जानेंगे।
+  </hindi>
       <!-- EXAMPLE -->
   
     <div class="w3-panel w3-card w3-light-grey">
@@ -95,15 +156,36 @@ In the following example, <code class="w3-codespan">x</code>, <code class="w3-co
     </div>
     <!-- EXAMPLE E -->
     </div>
+  <english>
+    In the above example, <code class="w3-codespan">==</code> is a <code class="w3-codespan">equal to</code>operator which checks if the 2 values are equal or not. On the 4th statement, The value of <code class="w3-codespan">x == y</code>
+    is false because 2 is not equals 3.
+    <br><br>
+    Booleans are just True or False values ,there is nothing more to know about them.
+    <br><br>
   
-  In the above example, <code class="w3-codespan">==</code> is a <code class="w3-codespan">equal to</code>operator which checks if the 2 values are equal or not. On the 4th statement, The value of <code class="w3-codespan">x == y</code>
-   is false because 2 is not equals 3.
-   <br><br>
-   Booleans are just True or False values ,there is nothing more to know about them.
-   <br><br>
-  
-  <b> ● Arrays </b> <br>
-  Arrays are like list or like a Set in Mathematics. An Array is a Set of elements. An Array can be created using the square brackets <code class="w3-codespan">[ element1, element2, element3]</code>. These elements in an array can be of any Data Type.
+    <b> ● Arrays </b> <br>
+    Arrays are like list or like a Set in Mathematics. An Array is a Set of elements. An Array can be created using the square brackets <code class="w3-codespan">[ element1, element2, element3]</code>. These elements in an array can be of any Data Type.
+  </english>
+  <marathi style="display:none">
+    वरील उदाहरणात, <code class="w3-codespan">==</code> एक <code class="w3-codespan">equal to</code> ऑपरेटर आहे जो 2 मूल्ये समान आहे की नाही याची तपासणी करतो . चौथ्या विधानावर <code class="w3-codespan">x == y</code> चे मूल्य
+    चुकीचे आहे कारण 2 बरोबर 3 नाही.
+    <br><br>
+    Boolean फक्त खरे किंवा खोटी मूल्ये आहेत, त्यांच्याबद्दल जाणून घेण्यासारखे आणखी काही नाही.
+    <br><br>
+    
+    <b> ● Arrays </b> <br>
+    Arrays यादीसारखे किंवा गणिताच्या सेटसारखे असतात. Array घटकांचा संच आहे. <code class="w3-codespan">[ element1, element2, element3]</code> चा वापर करून अ‍ॅरे तयार केला जाऊ शकतो. अ‍ॅरेमधील हे घटक कोणत्याही डेटा प्रकाराचे असू शकतात.
+  </marathi>
+  <hindi style="display:none">
+    उपरोक्त उदाहरण में, <code class="w3-codespan">==</code> एक <code class="w3-codespan">equal to</code> ऑपरेटर है जो जांचता है कि 2 मान बराबर हैं या नहीं . चौथे कथन पर, <code class="w3-codespan">x == y</code> का मान
+    गलत है क्योंकि 2 बराबर 3 नहीं है।
+    <br><br>
+    Boolean सिर्फ सही या गलत मूल्य हैं, उनके बारे में जानने के लिए और कुछ नहीं है।
+    <br><br>
+    
+    <b> ● Arrays </b> <br>
+    Arrays सूची की तरह हैं या गणित में एक सेट की तरह हैं। एक Array तत्वों का एक सेट है। वर्ग कोष्ठक <code class="w3-codespan">[ element1, element2, element3]</code> का उपयोग करके एक सरणी बनाई जा सकती है। किसी Array में ये तत्व किसी भी डेटा प्रकार के हो सकते हैं।
+  </hindi>
     <!-- EXAMPLE -->
   
     <div class="w3-panel w3-card w3-light-grey">
@@ -114,20 +196,51 @@ In the following example, <code class="w3-codespan">x</code>, <code class="w3-co
     </div>
     <!-- EXAMPLE E -->
     </div>
-  <b> Explanation : </b> in above example, On first statement we created an <code class="w3-codespan">Array</code> and named it <code class="w3-codespan">myArray</code>. It has elements of different data types. <br>
-  on the 2nd statement ,We accessed the value of the first element from the Array and assigned the value to the variable <code class="w3-codespan">x</code>.
-  <br><br>
-  <b> Accessing the elements in an Array</b> <br>
-  Each element in an Array has an index value using which we can access a specific element from the array. Indexing of elements starts from "0". To access a specific element we use <code class="w3-codespan">myArray[index of element]</code>.For example, if we want to access 3rd element of an Array <code class="w3-codespan">myArray</code> we will do <code class="w3-codespan">myArray[2]</code> because 2 is the index of 3rd element. 1 is the index of 2nd element and 0 is the index of 1st element<br>
+  <english>
+    <b> Explanation : </b> In above example, On first statement we created an <code class="w3-codespan">Array</code> and named it <code class="w3-codespan">myArray</code>. It has elements of different data types. <br>
+    On the 2nd statement, we accessed the value of the first element from the Array and assigned the value to the variable <code class="w3-codespan">x</code>.
+    <br><br>
+    <b> Accessing the elements in an Array</b> <br>
+    Each element in an Array has an index value using which we can access a specific element from the array. Indexing of elements starts from "0". To access a specific element we use <code class="w3-codespan">myArray[index of element]</code>.For example, if we want to access 3rd element of an Array <code class="w3-codespan">myArray</code> we will do <code class="w3-codespan">myArray[2]</code> because 2 is the index of 3rd element. 1 is the index of 2nd element and 0 is the index of 1st element<br>
   
-  <br>
-  <b> ● Objects </b>
-  <br>
-  JavaScript objects are written with curly braces <code class="w3-codespan">{}</code>.
-  <br>
+    <br>
+    <b> ● Objects </b>
+    <br>
+    JavaScript objects are written with curly braces <code class="w3-codespan">{}</code>.
+    <br>
 
-Object properties are written as <code class="w3-codespan">name:value</code> pairs, separated by commas. 
-
+    Object properties are written as <code class="w3-codespan">name:value</code> pairs, separated by commas. 
+  </english>
+  <marathi style="display:none">
+    <b> स्पष्टीकरण : </b> वरील उदाहरणात, पहिल्या विधानानुसार आम्ही <code class="w3-codespan">Array</code> तयार केले आणि त्यास <code class="w3-codespan">myArrat</code> असे नाव दिले. यात वेगवेगळ्या डेटा प्रकारांचे घटक आहेत. <br>
+    दुसराा स्टेटमेन्टवर, आम्ही अ‍ॅरेकडून पहिल्या घटकाचे मूल्य प्राप्त केले आणि <code class="w3-codespan">x</code> व्हेरिएबलला मूल्य दिले.
+    <br><br>
+    <b> Array मधील घटकांमध्ये प्रवेश करणे</b> <br>
+    अ‍ॅरेमधील प्रत्येक घटकाचे अनुक्रमणिका मूल्य असते ज्याद्वारे आपण अ‍ॅरेमधून विशिष्ट घटकावर प्रवेश करू शकतो. घटकांची अनुक्रमणिका "0" पासून प्रारंभ होते. विशिष्ट घटकावर प्रवेश करण्यासाठी आम्ही <code class="w3-codespan">myArray[index of element]</code> वापरतो. उदाहरणार्थ, जर आपल्याला अ‍ॅरेच्या 3rd थ्या घटकात प्रवेश करायचा असेल तर <code class="w3-codespan">myArray</code> आम्ही <code class="w3-codespan">myArray[2]</code> करू कारण 2 रा 3 रा घटकांची अनुक्रमणिका आहे. 1 2 रा घटकांची अनुक्रमणिका आहे आणि 0 प्रथम घटकाची अनुक्रमणिका आहे <br>
+    
+    <br>
+    <b> ● Objects </b>
+    <br>
+    जावास्क्रिप्ट ऑब्जेक्ट्स कुरळे कंसांसह लिहिल्या आहेत <code class="w3-codespan">name:value</code>.
+    <br>
+    
+    ऑब्जेक्ट प्रॉपर्टीज <code class="w3-codespan">name:value</code> जोड्या, स्वल्पविरामाने विभक्त केलेली म्हणून लिहिलेली असतात.
+  </marathi>
+  <hindi style="display:none">
+    <b> Explanation : </b> उपरोक्त उदाहरण में, पहले स्टेटमेंट पर हमने एक <code class="w3-codespan">Array</code> बनाया और इसे <code class="w3-codespan">myArray</code> नाम दिया। इसमें विभिन्न डेटा प्रकारों के तत्व हैं। <br>
+    दूसरे स्टेटमेंट पर, हमने ऐरे से पहले एलिमेंट के वैल्यू को एक्सेस किया और वेरिएबल <code class="w3-codespan">x</code> को वैल्यू असाइन की।
+    <br><br>
+    <b> एक Array में तत्वों तक पहुँचना</b> <br>
+    ऐरे में प्रत्येक तत्व का एक इंडेक्स वैल्यू होता है जिसके उपयोग से हम एरे से एक विशिष्ट तत्व तक पहुंच सकते हैं। तत्वों का अनुक्रमण "0" से शुरू होता है। किसी विशिष्ट तत्व तक पहुँचने के लिए हम <code class="w3-codespan">myArray[index of element]</code> का उपयोग करते हैं। उदाहरण के लिए, यदि हम किसी Array के तीसरे तत्व का उपयोग करना चाहते हैं <code class="w3-codespan" >myArray</code> हम <code class="w3-codespan">myArray[2]</code> करेंगे क्योंकि 2 तीसरे तत्व की अनुक्रमणिका है। 1 दूसरे तत्व का सूचकांक है और 0 पहले तत्व का सूचकांक है<br>
+    
+    <br>
+    <b> ● Objects </b>
+    <br>
+    JavaScript ऑब्जेक्ट कर्ली ब्रेसिज़ <code class="w3-codespan">{}</code> के साथ लिखे जाते हैं।
+    <br>
+    
+    ऑब्जेक्ट गुणों को अल्पविराम से अलग करके <code class="w3-codespan">name:value</code> जोड़े के रूप में लिखा जाता है।
+  </hindi>
   <div class="w3-panel w3-card w3-light-grey">
   <div class="w3-code jsHigh notranslate">
     <h2> Example </h2>
@@ -147,26 +260,70 @@ Object properties are written as <code class="w3-codespan">name:value</code> pai
   <button class="w3-button w3-green" onclick="openEditor()"> Try It </button>
   <!-- EXAMPLE E -->
   </div>
-  <b>Explanation : </b>In the above code ,<code class="w3-codespan">person</code> is an Object which has properties <code class="w3-codespan">name, surname, age, skills</code>. An Object property can hold any kind of data value. <br>
-  on the 9th statement we accessed the <code class="w3-codespan">name</code> property of person object. To access Object properties and it's values we use a dot <code class="w3-codespan">.</code>. We do it like <code class="w3-codespan">Object.property</code> this will give you the value of the property.
-  <br>
-<br> <b> Object Methods</b> <br>
-Objects can have properties as well as methods. Methods are like functions of the object.<br>
-You will learn more about functions in Functions chapter
-<br><br>
-<b> ● undefined type</b> <br>
-In JavaScript, a variable without a value, has the value <code class="w3-codespan">undefined</code>. The type is also <code class="w3-codespan">undefined</code>
-<br><br>
-<b> ● null type</b> <br>
-In JavaScript <code class="w3-codespan">null</code> is "nothing". It is supposed to be something that doesn't exist.
+  <english>
+    <b>Explanation : </b> In the above code, <code class="w3-codespan">person</code> is an Object which has properties <code class="w3-codespan">name, surname, age, skills</code>. An Object property can hold any kind of data value. <br>
+    on the 9th statement we accessed the <code class="w3-codespan">name</code> property of person object. To access Object properties and it's values we use a dot <code class="w3-codespan">.</code>. We do it like <code class="w3-codespan">Object.property</code> this will give you the value of the property.
+    <br>
+    <br> <b> Object Methods</b> <br>
+    Objects can have properties as well as methods. Methods are like functions of the object.<br>
+    You will learn more about functions in Functions chapter.
+    <br><br>
+    <b> ● undefined type</b> <br>
+    In JavaScript, a variable without a value, has the value <code class="w3-codespan">undefined</code>. The type is also <code class="w3-codespan">undefined</code>.
+    <br><br>
+    <b> ● null type</b> <br>
+    In JavaScript <code class="w3-codespan">null</code> is "nothing". It is supposed to be something that doesn't exist.
 
-Unfortunately, in JavaScript, the data type of <code class="w3-codespan">null</code> is an object.
- <br><br>
+    Unfortunately, in JavaScript, the data type of <code class="w3-codespan">null</code> is an object.
+    <br><br>
  
- <b>● typeof operator</b> <br>
- The <code class="w3-codespan">typeof</code> operator is used to find the type of variables.
- The <code class="w3-codespan">typeof</code> operator returns the type of a variable or an expression.
-   <div class="w3-panel w3-card w3-light-grey">
+    <b>● typeof operator</b> <br>
+    The <code class="w3-codespan">typeof</code> operator is used to find the type of variables.
+    The <code class="w3-codespan">typeof</code> operator returns the type of a variable or an expression.
+  </english>
+  <marathi style="display:none">
+    <b> स्पष्टीकरण: </b> वरील कोडमध्ये <code class="w3-codespan">person</code> एक ऑब्जेक्ट आहे ज्यात गुणधर्म <code class="w3-codespan">name, surname, age, skills</code> आहे. ऑब्जेक्ट प्रॉपर्टीमध्ये कोणत्याही प्रकारचे डेटा मूल्य असू शकते. <br>
+    9 व्या विधानावर आम्ही व्यक्तीच्या <code class="w3-codespan">name</code> ऑब्जेक्टच्या मालमत्तेवर प्रवेश केला. ऑब्जेक्ट प्रॉपर्टीज आणि त्याच्या व्हॅल्यूजमध्ये प्रवेश करण्यासाठी आम्ही <code class="w3-codespan">.</code> वापरतो. आम्ही हे <code class="w3-codespan">Object.property</code> असे करतो जे आपल्याला मालमत्तेचे मूल्य देईल.
+    <br>
+    <br> <b> Object Methods</b> <br>
+    ऑब्जेक्टमध्ये पद्धती तसेच गुणधर्म असू शकतात. पद्धती ऑब्जेक्टच्या फंक्शनसारखे असतात. <br>
+    आपण फंक्शन्स अध्यायातील फंक्शन्सबद्दल अधिक जाणून घ्या.
+    <br><br>
+    <b> ● undefined type</b> <br>
+    जावास्क्रिप्टमध्ये, मूल्याशिवाय व्हेरिएबलचे मूल्य <code class="w3-codespan">undefined</code> आहे. हा प्रकार <code class="w3-codespan">undefined</code> देखील आहे.
+    <br><br>
+    <b> ● null type</b> <br>
+    जावास्क्रिप्ट मध्ये <code class="w3-codespan">null</code> "काहीही नाही" आहे. हे असे काहीतरी आहे जे अस्तित्त्वात नाही.
+
+    दुर्दैवाने, जावास्क्रिप्टमध्ये, <code class="w3-codespan">null</code> चा डेटा प्रकार एक ऑब्जेक्ट आहे.
+    <br><br>
+    
+    <b>● typeof operator</b> <br>
+    व्हेरिएबल्सचा प्रकार शोधण्यासाठी <code class="w3-codespan">typeof</code> ऑपरेटर वापरला जातो.
+    <code class="w3-codespan">typeof</code> ऑपरेटर एखाद्या चलचा किंवा अभिव्यक्तीचा प्रकार परत करतो.
+  </marathi>
+  <hindi style="display:none">
+    <b>Explanation : </b> उपरोक्त कोड में, <code class="w3-codespan">person</code> एक ऐसी वस्तु है जिसमें <code class="w3-codespan">name, उपनाम, आयु, कौशल</code> के गुण होते हैं। ऑब्जेक्ट प्रॉपर्टी किसी भी प्रकार का डेटा मान रख सकती है। <br>
+    9वें स्टेटमेंट पर हमने व्यक्ति ऑब्जेक्ट की <code class="w3-codespan">name</code> प्रॉपर्टी को एक्सेस किया। ऑब्जेक्ट गुणों और उसके मूल्यों तक पहुँचने के लिए हम एक डॉट <code class="w3-codespan">.</code> का उपयोग करते हैं। हम इसे <code class="w3-codespan">Object.property</code> की तरह करते हैं, यह आपको संपत्ति का मूल्य देगा।
+    <br>
+    <br> <b> Object Methods</b> <br>
+    वस्तुओं में गुण और विधियाँ भी हो सकती हैं। विधियाँ वस्तु के कार्यों की तरह हैं।<br>
+    आप फ़ंक्शंस अध्याय में फ़ंक्शंस के बारे में और जानेंगे।
+    <br><br>
+    <b> ● undefined type</b> <br>
+    JavaScript में, बिना किसी मान वाले वैरिएबल का मान <code class="w3-codespan">undefined</code> होता है। प्रकार <code class="w3-codespan">अपरिभाषित</code> भी है।
+    <br><br>
+    <b> ● null type</b> <br>
+    जावास्क्रिप्ट में <code class="w3-codespan">null</code> "कुछ नहीं" है। यह कुछ ऐसा होना चाहिए जो अस्तित्व में नहीं है।
+
+    दुर्भाग्य से, जावास्क्रिप्ट में, डेटा प्रकार <code class="w3-codespan">null</code> एक ऑब्जेक्ट है।
+    <br><br>
+ 
+    <b>● typeof operator</b> <br>
+    वेरिएबल के प्रकार को खोजने के लिए <code class="w3-codespan">typeof</code> ऑपरेटर का उपयोग किया जाता है।
+    <code class="w3-codespan">typeof</code> ऑपरेटर एक वैरिएबल या एक्सप्रेशन का प्रकार देता है।
+  </hindi>
+  <div class="w3-panel w3-card w3-light-grey">
   <div class="w3-code jsHigh notranslate">
     <h2> Example </h2>
     let a = "Hello"; <br>
@@ -192,9 +349,18 @@ Unfortunately, in JavaScript, the data type of <code class="w3-codespan">null</c
   <button class="w3-button w3-green" onclick="openEditor()"> Try It </button>
   <!-- EXAMPLE E -->
   </div>
-  <b>NOTE : </b> type of an Array is also an Object. index of an element in an Array is the property name of the Object and value of an element in an Array is the property value of the Object. <br>
-  Conclusion type of Array is also an Object.
-  </p>
+  <english>
+    <b>NOTE : </b> Type of an Array is also an Object. index of an element in an Array is the property name of the Object and value of an element in an Array is the property value of the Object. <br>
+    Conclusion type of Array is also an Object.
+  </english>
+  <marathi style="display:none">
+    <b>NOTE : </b> अ‍ॅरेचा प्रकार देखील एक ऑब्जेक्ट आहे. अ‍ॅरेमधील घटकाची अनुक्रमणिका ऑब्जेक्टचे गुणधर्म नाव आहे आणि अ‍ॅरेमधील घटकाचे मूल्य ऑब्जेक्टचे गुणधर्म आहे. <br>
+    अ‍ॅरेचा निष्कर्ष प्रकार देखील एक ऑब्जेक्ट आहे.
+  </marathi>
+  <hindi style="display:none">
+    <b>NOTE : </b> एक ऐरे का प्रकार भी एक वस्तु है। एक ऐरे में एक तत्व का सूचकांक वस्तु का गुण नाम है और एक ऐरे में एक तत्व का मूल्य वस्तु का गुण मूल्य है। <br>
+    निष्कर्ष प्रकार का ऐरे भी एक वस्तु है।
+  </hindi>
 <!-- DEFINITIONS END -->
 
  <div class="w3-center" style="padding-bottom: 90px;">
