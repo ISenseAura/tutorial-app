@@ -1,12 +1,13 @@
 //Definitions about the following words must be short and easily understandable
 
+
 let exInfo = {
-  "console" : "A console is a place where all the logs about the compilation of programs are shown. A console is used by developers for debugging purposes. All the errors in the program are posted in console.",
-  "frontend" : "The front end of a website is everything the user either sees or interacts with when they visit the website.",
-  "javascriptkeyword" : "Keywords are reserve words in JavaScript which you cannot use to name the variables labels, or function names.",
-  "keyword" : "Keywords are reserve words in JavaScript which you cannot use to name the variables labels, or function names.",
-  "string" : "A JavaScript string stores a series of characters",
-  "strings" : "A JavaScript string stores a series of characters"
+  "console": "A console is a place where all the logs about the compilation of programs are shown. A console is used by developers for debugging purposes. All the errors in the program are posted in console.",
+  "frontend": "The front end of a website is everything the user either sees or interacts with when they visit the website.",
+  "javascriptkeyword": "Keywords are reserve words in JavaScript which you cannot use to name the variables labels, or function names.",
+  "keyword": "Keywords are reserve words in JavaScript which you cannot use to name the variables labels, or function names.",
+  "string": "A JavaScript string stores a series of characters",
+  "strings": "A JavaScript string stores a series of characters"
 }
 
 
@@ -19,7 +20,10 @@ let nav = `<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left 
   <a href="jshowto.html" onclick="w3_close(); showLoading()" class="w3-bar-item w3-button">JS How To Use</a>
    <a href="jsstatements.html" onclick="w3_close(); showLoading()" class="w3-bar-item w3-button">JS Statements</a>
     <a href="jscomments.html" onclick="w3_close(); showLoading()" class="w3-bar-item w3-button">JS Comments</a>
-     <a href="jsvariables.html" onclick="w3_close(); showLoading()" class="w3-bar-item w3-button">JS Variables</a>   
+     <a href="jsvariables.html" onclick="w3_close(); showLoading()" class="w3-bar-item w3-button">JS Variables</a>  
+      <a href="jsoperators.html" onclick="w3_close(); showLoading()" class="w3-bar-item w3-button">JS Operators</a>  
+     <a href="jsdatatypes.html" onclick="w3_close(); showLoading()" class="w3-bar-item w3-button">JS DataTypes</a>
+      <a href="jsfunctions.html" onclick="w3_close(); showLoading()" class="w3-bar-item w3-button">JS Functions</a> 
 </nav> `; 
 
 document.getElementById("navI").innerHTML = nav;
