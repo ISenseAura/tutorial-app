@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<title>JavaScript Functions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="ps-popup" style="display:none;" id="popup"></div>
+    
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide" id="navv">JS Functions</a>
+ 
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<div id="navI"></div>
+<!-- NAV END --> 
+<div id="blur">
+<!-- DEFINITIONS -->
+<div class="w3-container" style="padding:80px 16px;">
+  <p>
+    <english>
+    A JavaScript function is a block of code designed to perform a particular task.
+
+A JavaScript function is executed when "something" invokes it (calls it).
+</english>
+
+
+  <div class="w3-panel w3-card w3-light-grey">
+  <div class="w3-code jsHigh notranslate">
+    <h2> Example </h2>
+    function callMe() { <br>
+    alert("This function is called"); <br>
+    } <br>
+    <br>
+    callMe(); //calling the function <br>
+    
+  </div>
+  <button class="w3-button w3-green" onclick="openEditor()"> Try It </button>
+  <!-- EXAMPLE E -->
+  </div>
+  <english>
+<b> Explanation : </b> In the above code ,we created a function and named it <code class="w3-codespan">callMe</code> The code of the function goes inside the curly braces <code class="w3-codespan">{}</code>. On 6th statement we called the function using round brackets <code class="w3-codespan">()</code>. The syntax to create a function is <br> <code class="w3-codespan">function name(parameters) <br> { <br> ...code to be executed <br> }<br> </code>
+<br> We can pass paramaters (variables) to functions by putting them inside the rounded brackets 
+</english>
+
+ <div class="w3-panel w3-card w3-light-grey">
+  <div class="w3-code jsHigh notranslate">
+    <h2> Example </h2>
+    function say(word) { <br>
+    alert(word); <br>
+    } <br>
+    <br>
+    say("Hello i am mayur"); //calling the function <br>
+    
+  </div>
+  <button class="w3-button w3-green" onclick="openEditor()"> Try It </button>
+  <!-- EXAMPLE E -->
+  </div>
+<english>Here the function <code class="w3-codespan">say</code> accepts 1 parameter. on 5th statement we called the function <code class="w3-codespan">say</code> and passed it a String value which is <code class="w3-codespan">Hello i am mayur</code>. When we passed this value to the function ,the function stored this value in <code class="w3-codespan">word</code> variable. And then we output the value using <code class="w3-codespan">word</code> variable or parameter. We can use the <code class="w3-codespan">word</code> variable inside that function only not outside the function. We can pass any number of parameters seperated by commas and any kind of data values through functions </english>
+
+
+ <div class="w3-panel w3-card w3-light-grey">
+  <div class="w3-code jsHigh notranslate">
+    <h2> Example </h2>
+    function getFullName(name,lastname) { <br>
+    alert("Hello my name is " + name + lastname); <br>
+    } <br>
+    <br>
+    getFullName("mayur ","hiwale"); //pass 2 parameters <br>
+    getFullName("javascript ","boy"); // calling again
+  </div>
+  <button class="w3-button w3-green" onclick="openEditor()"> Try It </button>
+  <!-- EXAMPLE E -->
+  </div>
+<br>
+<english>
+<b> ● return keyword</b> <br>
+When JavaScript reaches a <code class="w3-codespan">return</code> statement, the function will stop executing.
+<br>
+If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.
+<br>
+Functions often compute a return value. The return value is "returned" back to the "caller"
+<br>
+</english>
+
+<div class="w3-panel w3-card w3-light-grey">
+  <div class="w3-code jsHigh notranslate">
+    <h2> Example </h2>
+    function findCube(x) { <br>
+    return x * x * x; <br>
+    } <br>
+    
+    let cube = findCube(3); <br>
+    alert(cube);
+  </div>
+  <button class="w3-button w3-green" onclick="openEditor()"> Try It </button>
+  <!-- EXAMPLE E -->
+</div>
+<english>
+  <b>Explanation : </b> <code class="w3-codespan">return</code> statement stops the executing of the function and returns a value which we can store in a variable as we did on 4th statement. <br>
+  We called the function and it returned a value and we stored the value in a variable named <code class="w3-codespan">cube</code>.
+  <br><br> Try the following example 
+</english>
+
+<div class="w3-panel w3-card w3-light-grey">
+  <div class="w3-code jsHigh notranslate">
+    <h2> Example </h2>
+    function findCube(x) { <br>
+    alert("Finding the cube"); <br>
+    return x * x * x; <br> //Further execution stopped<br>
+    alert("This line doesnt get executed"); <br>
+    alert("Function execution has stopped");<br>
+    } <br><br>
+    
+    let cube = findCube(3); <br>
+    alert(cube);
+  </div>
+  <button class="w3-button w3-green" onclick="openEditor()"> Try It </button>
+  <!-- EXAMPLE E -->
+</div>
+<english>We can store the values that a function returns by doing <code class="w3-codespan">let x = funcName()</code>
+<br><br>
+<b>Local Variables : </b> Local variables are those variables which are declared inside a <code class="w3-codespan">function</code>. We can NOT use a local variable outside that function. Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.<br><br>
+<b>Global Variables : </b> Global variables are those variables which are declared OUTSIDE a <code class="w3-codespan">function</code>. We can use a global variable anywhere in the code.
+</english>
+</p>
+<!-- DEFINITIONS END -->
+
+ <div class="w3-center" style="padding-bottom: 90px;">
+<small>
+    <button onclick="location.reload()" class="w3-button w3-red"><b> Refresh</b> </button>
+    
+        <button onclick="askAD()" class="w3-button w3-green"> <b>
+          Ask A Doubt </b></button>
+              <button onclick="srp(document.title)" class="w3-button w3-yellow"> <b>See Related Practices</b></button>
+ </small>
+  </div>
+ </div>
+</div>
+
+
+
+<script>
+try {
+placeItems()
+} catch (e) {
+  alert("Try refreshing the app using the Refresh button given at the bottom");
+}
+
+
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
