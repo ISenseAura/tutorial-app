@@ -34,6 +34,13 @@ body, html {
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
+    
+    <select onchange="changeLang()" class="w3-bar-item w3-right w3-button" id="language">
+      <option value="english">English</option>
+      <option value="hindi">Hindi</option>
+      <option value="marathi">Marathi</option>
+    </select>
+    
   </div>
 </div>
 
@@ -43,10 +50,18 @@ body, html {
 <div id="blur">
 <!-- DEFINITIONS -->
 <div class="w3-container" style="padding:80px 16px;">
-  <p>
+  <english>
     JavaScript variables are containers for storing data values.
-
-In the following example, <code class="w3-codespan">x</code>, <code class="w3-codespan">y</code> and <code class="w3-codespan">z</code> are variables declared using the <code class="w3-codespan">var</code> keyword:
+    In the following example, <code class="w3-codespan">x</code>, <code class="w3-codespan">y</code> and <code class="w3-codespan">z</code> are variables declared using the <code class="w3-codespan">var</code> keyword:
+  </english>
+  <marathi style="display:none"> 
+    JavaScript variables डेटा मूल्ये संचयित करण्यासाठी कंटेनर आहेत.
+    खालील उदाहरणात, <code class="w3-codespan">x</code>, <code class="w3-codespan">y</code> <code class="w3-codespan">z</code> हे <code class="w3-codespan">var</code> keyword वापरून घोषित केलेले चल आहेत:
+  </marathi>
+  <hindi style="display:none"> 
+    JavaScript variables डेटा मानों को संग्रहीत करने के लिए कंटेनर हैं।
+    निम्नलिखित उदाहरण में, <code class="w3-codespan">x</code>, <code class="w3-codespan">y</code> और <code class="w3-codespan">z</code> <code class="w3-codespan">var</code> keyword का उपयोग करके घोषित variables हैं:
+  </hindi>
   <!-- DEFINITION --> 
   <!-- EXAMPLE -->
   
@@ -59,12 +74,28 @@ In the following example, <code class="w3-codespan">x</code>, <code class="w3-co
     </div>
     <!-- EXAMPLE E -->
     </div>
-  <b> Explanation :</b> In the above example,on 1st statement we created a variable using <code class="w3-codespan">var</code> <info>keyword</info> and named it <code class="w3-codespan">x</code> and assigned it a number value "1" using <code class="w3-codespan">=</code> operator. <br>
-  Similarly on 2nd and 3rd statement we created <code class="w3-codespan">y</code> and <code class="w3-codespan">z</code> variables and assigned them values. The type of variable <code class="w3-codespan">x</code> is an integer or number and type of variable <code class="w3-codespan">y</code> and <code class="w3-codespan">z</code> is a <info>String</info> or text. <br> <br> You will learn more about javascript variable types in next chapter.<br><br> 
+  <english>
+    <b> Explanation </b> : In the above example,on 1st statement we created a variable using <code class="w3-codespan">var</code> <info>keyword</info> and named it <code class="w3-codespan">x</code> and assigned it a number value "1" using <code class="w3-codespan">=</code> operator. <br>
+    Similarly on 2nd and 3rd statement we created <code class="w3-codespan">y</code> and <code class="w3-codespan">z</code> variables and assigned them values. The type of variable <code class="w3-codespan">x</code> is an integer or number and type of variable <code class="w3-codespan">y</code> and <code class="w3-codespan">z</code> is a <info>String</info> or text. <br> <br> You will learn more about javascript variable types in next chapter.<br><br> 
   
-  <b> Declaring (creating) a variable </b><br>
-  JavaScript variables can be created using <code class="w3-codespan">var</code> keyword. In the following example, we created a variable <code class="w3-codespan">x</code>. We have not assigned it value yet so technically it has a value <code class="w3-codespan">undefined</code>.
-      <!-- EXAMPLE -->
+    <b> Declaring (creating) a variable </b><br>
+    JavaScript variables can be created using <code class="w3-codespan">var</code> keyword. In the following example, we created a variable <code class="w3-codespan">x</code>. We have not assigned it value yet so technically it has a value <code class="w3-codespan">undefined</code>.
+  </english>
+  <marathi style="display:none"> 
+    <b> स्पष्टीकरण </b> : वरील उदाहरणात, पहिल्या विधानावर आम्ही <code class="w3-codespan">var</code> <info>keyword</info> वापरून variable तयार केले आणि त्यास <code class="w3-codespan">x</code> असे नाव दिले  आणि <code class = "w3-codespan"> = </code> ऑपरेटर वापरून "1" मूल्य निर्दिष्ट केले. <br>
+    त्याचप्रमाणे दुसर्‍या आणि तिसर्‍या स्टेटमेंटवर आम्ही <code class="w3-codespan">y</code> आणि <code class = "w3-codespan">z</code> variables तयार केली आणि त्यांना values दिली. <code class="w3-codespan">x</code> चा प्रकार एक integer किंवा संख्या  आहे <code class="w3-codespan">y</code> आणि <code class="w3-codespan">z</code> <info>String</info> किंवा text आहे. <br><br> पुढील अध्यायात आपण JavaScript variables प्रकारांबद्दल अधिक जाणून घ्या. <br><br>
+     
+    <b> Variable घोषित करणे </b><br>
+    JavaScript variables <code class="w3-codespan">var</code> keyword वापरून तयार करता येतात. पुढील उदाहरणात, आम्ही एक व्हेरिएबल <code class="w3-codespan">x</code> तयार केला. आम्ही अद्याप त्याचे मूल्य निर्दिष्ट केलेले नाही म्हणून तांत्रिकदृष्ट्या त्याचे मूल्य <code class="w3-codespan">undefined</code> आहे.
+  </marathi>
+  <hindi style="display:none"> 
+    उपरोक्त उदाहरण में, पहले स्टेटमेंट पर हमने <code class="w3-codespan">var</code> <info>keyword</info> का उपयोग करके एक variable बनाया और इसे <code class="w3-codespan">x</code> नाम दिया और इसे <code class="w3-codespan">+</code> ऑपरेटर का उपयोग करके एक संख्या मान "1" असाइन किया। <br>
+    इसी तरह दूसरे और तीसरे स्टेटमेंट पर हमने <code class="w3-codespan">y</code> और <code class="w3-codespan">z</code> variables बनाए और उन्हें values दिया। Variable <code class="w3-codespan">x</code> का प्रकार एक integer या संख्या है और variables <code class="w3-codespan">y</code> और <code class="w3-codespan">z</code> एक <info>String</info> या text है।। <br> <br> आप अगले अध्याय में JavaScript variables प्रकारों के बारे में और जानेंगे। <br> <br>
+    
+    <b> एक variable घोषित करना </b><br> 
+    JavaScript variables को <code class="w3-codespan">var</code> keyword का उपयोग करके बनाया जा सकता है। निम्नलिखित उदाहरण में, हमने एक variable <code class="w3-codespan">x</code> बनाया है। हमने इसे अभी तक मान नहीं दिया है इसलिए तकनीकी रूप से इसका एक मान है <code class="w3-codespan">undefined</code>।
+  </hindi>
+    <!-- EXAMPLE -->
   
     <div class="w3-panel w3-card w3-light-grey">
     <div class="w3-code jsHigh notranslate">
@@ -74,23 +105,57 @@ In the following example, <code class="w3-codespan">x</code>, <code class="w3-co
     <!-- EXAMPLE E -->
     </div>
   
-  After creating a variable, We can assign it a value using <code class="w3-codespan">=</code> assignment operator. A variable can have many types of data values such as <info>string</info>, numbers, Array, Objects etc. you will learn about them later in the tutorial.
-  <br><br>
+  <english>
+    After creating a variable, We can assign it a value using <code class="w3-codespan">=</code> assignment operator. A variable can have many types of data values such as <info>string</info>, numbers, Array, Objects etc. you will learn about them later in the tutorial.
+    <br><br>
   
-  <b> Naming the variable</b> <br>
-  There are some rules to follow before declaring a variable. <br>
-  1) The name of the variable must begin with a Alphabet or A dollar sign <code class="w3-codespan">$</code> or An Underscore <code class="w3-codespan">_</code>. <br>
-  2) You cannot use reserved words or keywords as a name of your variable. <br>
-  3) Variable names are case-sensitive means variables <code class="w3-codespan">y</code> and
-  <code class="w3-codespan">Y</code> are different variables.<br>
-  4) Variable names can contain letters, digits, underscores, and dollar signs only.
+    <b> Naming the variable </b><br>
+    There are some rules to follow before declaring a variable. <br>
+    1) The name of the variable must begin with a Alphabet or A dollar sign <code class="w3-codespan">$</code> or An Underscore <code class="w3-codespan">_</code>. <br>
+    2) You cannot use reserved words or keywords as a name of your variable. <br>
+    3) Variable names are case-sensitive means variables <code class="w3-codespan">y</code> and <code class="w3-codespan">Y</code> are different variables.<br>
+    4) Variable names can contain letters, digits, underscores, and dollar signs only.
   
-  <br><br>
+    <br><br>
   
-  <b> Using let and const keywords</b> <br>
-  You can declare a variable by using 3 keywords namely <code class="w3-codespan">var</code>,
-  <code class="w3-codespan">let</code> and <code class="w3-codespan">const</code>. <br> <code class="w3-codespan">var</code> and <code class="w3-codespan">let</code> are similar keywords they have no difference but when you create a variable using the keyword <code class="w3-codespan">const</code> the value of that variable remains constant forever. 
-  
+    <b> Using let and const keywords </b><br>
+    You can declare a variable by using 3 keywords namely <code class="w3-codespan">var</code>,
+    <code class="w3-codespan">let</code> and <code class="w3-codespan">const</code>. <br> <code class="w3-codespan">var</code> and <code class="w3-codespan">let</code> are similar keywords they have no difference but when you create a variable using the keyword <code class="w3-codespan">const</code> the value of that variable remains constant forever. 
+  </english>
+  <marathi style="display:none">
+    Variable बनवल्यानंतर आपण त्याला <code class="w3-codespan">=</code> असाइनमेंट ऑपरेटर वापरुन व्हॅल्यू देऊ शकतो. व्हेरिएबलमध्ये अनेक प्रकारची डेटा व्हॅल्यूज असू शकतात जसे की <info>String</info>, Number, Array, Objects, इ. आपण त्याबद्दल नंतर शिकू.
+    <br><br>
+    
+    <b> Variable चे नाव देणे </b><br>
+    Variable घोषित करण्यापूर्वी त्याचे काही नियम पाळले जातील. <br>
+    १) व्हेरिएबलच्या नावाची अक्षरे किंवा डॉलर चिन्हाने <code class="w3-codespan">$</code> किंवा अंडरस्कोर <code class="w3-codespan">_</code> ने प्रारंभ होणे आवश्यक आहे. <br>
+    २) आपण आपल्या व्हेरिएबलचे नाव म्हणून आरक्षित शब्द किंवा कीवर्ड वापरू शकत नाही. <br>
+    ३) व्हेरिएबल नावे केस सेन्सेटिव्ह म्हणजे व्हेरिएबल्स <code class="w3-codespan">y</code> आणि <code class="w3-codespan">Y</code> हे भिन्न व्हेरिएबल्स आहेत. <br>
+    ४) व्हेरिएबल नावांमध्ये फक्त अक्षरे, अंक, अंडरस्कोर आणि डॉलर चिन्हे असू शकतात.
+    
+    <br><br>
+    
+    <b> let आणि const कीवर्ड वापरणे </b><br>
+    व्हेरिएबलची घोषणा आपण 3 कीवर्ड अर्थात <code class="w3-codespan">var</code>,
+    <code class="w3-codespan">let</code> आणि <code class="w3-codespan">const</code> करू शकता. <br> <code class="w3-codespan">var</code> आणि <code class="w3-codespan">let</code> सारखे कीवर्ड आहेत त्यांना फरक नाही पण जेव्हा तुम्ही कीवर्ड <code class="w3-codespan">const</code> चा वापर करून व्हेरिएबल तयार कराल तेव्हा त्या व्हेरिएबलचे मूल्य कायम राहील.
+  </marathi>
+  <hindi style="display:none"> 
+    एक variable बनाने के बाद, हम इसे <code class="w3-codespan">=</code> असाइनमेंट ऑपरेटर का उपयोग करके एक मान निर्दिष्ट कर सकते हैं। एक वेरिएबल में कई प्रकार के डेटा मान हो सकते हैं जैसे <info>String</info>, Number, Array, Objects आदि। आप उनके बारे में बाद में ट्यूटोरियल में जानेंगे।
+    <br><br>
+    
+    <b> चर का नामकरण </b><br>
+    Variable घोषित करने से पहले पालन करने के लिए कुछ नियम हैं| <br>
+    1) Variable का नाम वर्णमाला या डॉलर चिह्न <code class="w3-codespan">$</code> या एक अंडरस्कोर <code class="w3-codespan">_</code> से शुरू होना चाहिए। <br>
+    2) आप अपने वेरिएबल के नाम के रूप में आरक्षित शब्दों या कीवर्ड का उपयोग नहीं कर सकते। <br>
+    3) वेरिएबल नाम केस-संवेदी होते हैं अर्थात वेरिएबल <code class="w3-codespan">y</code> और <code class="w3-codespan">Y</code> अलग-अलग वेरिएबल होते हैं। <br>
+    4) परिवर्तनीय नामों में केवल अक्षर, अंक, अंडरस्कोर और डॉलर चिह्न हो सकते हैं।
+    
+    <br><br>
+    
+    <b> let और const कीवर्ड का उपयोग करना </b><br>
+    आप 3 कीवर्ड का उपयोग करके एक वेरिएबल घोषित कर सकते हैं <code class="w3-codespan">var</code>,
+    <code class="w3-codespan">let</code> और <code class="w3-codespan">const</code>। <br> <code class="w3-codespan">var</code> और <code class="w3-codespan">let</code> एक जैसे कीवर्ड हैं उनमें कोई अंतर नहीं है लेकिन जब आप <code class="w3-codespan">const</code> कीवर्ड का उपयोग करके एक वेरिएबल बनाते हैं उस वेरिएबल का मान हमेशा स्थिर रहता है।
+  </hindi>
     <!-- EXAMPLE -->
   
     <div class="w3-panel w3-card w3-light-grey">
@@ -107,11 +172,18 @@ In the following example, <code class="w3-codespan">x</code>, <code class="w3-co
     </div>
     <!-- EXAMPLE E -->
     </div>
-  <b> Explanation : </b> in above example, when you try to change the values of variables x and y, it will be changed but when you try to change value of <code class="w3-codespan">z</code> it will not be changed because we declared the variable as a constant variable.
-  </p>
-<!-- DEFINITIONS END -->
+  <english>
+    <b> Explanation </b> : In above example, when you try to change the values of variables x and y, it will be changed but when you try to change value of <code class="w3-codespan">z</code> it will not be changed because we declared the variable as a constant variable.
+  </english>
+  <marathi style="display:none"> 
+    <b> स्पष्टीकरण </b> : वरील उदाहरणात, आपण व्हेरिएबल्स x आणि y ची व्हॅल्यू बदलण्याचा प्रयत्न करता तेव्हा ते बदलले जातील परंतु जेव्हा आपण <code class="w3-codespan">z</code> चे व्हॅल्यू बदलण्याचा प्रयत्न कराल तेव्हा ते होणार नाही कारण आम्ही constant variable घोषित केले.
+  </marathi>
+  <hindi style="display:none"> 
+    <b> Explanation </b> : उपरोक्त उदाहरण में, जब आप चर x और y के मानों को बदलने का प्रयास करते हैं, तो यह बदल जाएगा लेकिन जब आप <code class="w3-codespan">z</code> के मान को बदलने का प्रयास करेंगे तो यह नहीं होगाा क्योंकि हमने चर को एक स्थिर चर के रूप में घोषित किया था।
+  </hindi>
+    <!-- DEFINITIONS END -->
 
-<!-- FOOTER BEGIN -->
+    <!-- FOOTER BEGIN -->
   <div class="w3-center" style="padding-bottom: 90px;">
 
     <button onclick="location.reload()" class="w3-button w3-red"><b> Refresh</b> </button>
