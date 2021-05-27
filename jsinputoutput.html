@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<title>JavaScript - Input/Output</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="ps-popup" style="display:none" id="popup"></div>
+    
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide" id="navv">JS Input/Output</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+    
+    <select onchange="changeLang()" class="w3-bar-item w3-right w3-button" id="language">
+      <option value="english">English</option>
+      <option value="hindi">Hindi</option>
+      <option value="marathi">Marathi</option>
+    </select>
+    
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<div id="navI"></div>
+<!-- NAV END --> 
+<div id="blur">
+<!-- DEFINITIONS -->
+<div class="w3-container" style="padding:80px 16px;">
+  <english>
+    <b> Output </b> <br>
+    There are 3 different ways to Output values in JavaScript. <br><br>  Using <code class="w3-codespan">document.write("text")</code> this method replaces all the content in webpage with the "text" we provided.
+ Try the following code in a HTML file (We recommend you use Spck editor for android).
+  </english>
+
+  <!-- EXAMPLE -->
+  
+    <div class="w3-panel w3-card w3-light-grey">
+    <div class="w3-code htmlHigh notranslate">
+      <h2> Example </h2> 
+     &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>
+      &lt;title&gt;HTML Tutorial&lt;/title&gt;<br>
+       &lt;head&gt; <br>
+        &lt;script&gt; <br>
+         document.write("Hello World")<br>
+         &lt;/script&gt; <br>
+          &lt;/head&gt;<br>
+        
+      &lt;body&gt;<br>
+      &lt;/body&gt;<br>
+      &lt;/html&gt;
+    </div>
+    <!-- EXAMPLE E -->
+      <button class="w3-button w3-green" onclick="alert('Do not use above code as the above code is a HTML and our editor accepts.pure javascript.Just use document.write(text) method in the editor');openEditor()"> Try It </button>
+    </div>
+    <!-- OUTPUT E -->
+  <english>
+    We will not use this method that much in our practices. <br><br>
+    Using <code class="w3-codespan">alert("text")</code> this method opens a popup window on client side and shows our output.Unlike the previous method, this doesnt erase our webpage content
+  </english>
+  
+      <div class="w3-panel w3-card w3-light-grey">
+    <div class="w3-code htmlHigh notranslate">
+      <h2> Example </h2> 
+     &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>
+      &lt;title&gt;HTML Tutorial&lt;/title&gt;<br>
+       &lt;head&gt; <br>
+        &lt;script&gt; <br>
+         alert("Hello World"); <br>
+         &lt;/script&gt; <br>
+          &lt;/head&gt;<br>
+        
+      &lt;body&gt;<br>
+      &lt;/body&gt;<br>
+      &lt;/html&gt;
+    </div>
+    <!-- EXAMPLE E -->
+      <button class="w3-button w3-green" onclick="alert('Do not use above code as the above code is a HTML and our editor accepts.pure javascript.Just use document.write(text) method in the editor');openEditor()"> Try It </button>
+    </div>
+    <br>
+  <english>Using <code class="w3-codespan">console.log(text)</code>. This is the method most developers use for debugging or testing purpose. This method writes the logs or texts in our browser's <info>console</info>.</english>
+  
+        <div class="w3-panel w3-card w3-light-grey">
+    <div class="w3-code htmlHigh notranslate">
+      <h2> Example </h2> 
+     &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>
+      &lt;title&gt;HTML Tutorial&lt;/title&gt;<br>
+       &lt;head&gt; <br>
+        &lt;script&gt; <br>
+         console.log("Hello World"); <br>
+         &lt;/script&gt; <br>
+          &lt;/head&gt;<br>
+        
+      &lt;body&gt;<br>
+      &lt;/body&gt;<br>
+      &lt;/html&gt;
+    </div>
+    <!-- EXAMPLE E -->
+
+    </div>
+  <english>
+    Copy the above code and paste it in a HTML file. Use SPCK editor for android. Run the code and then the webpage will be displayed. In top-right corner click on the three dots and then enable "console" in the settings. You will see a console window opened and in the console you will see our output.
+    <br> <br> These are the methods we use to output texts in JavaScript. In our tutorial we will use <code class="w3-codespan">alert()</code> method the most. <br><br>
+    <b> Input </b> <br>
+    There are few methods to ask user for their input but the most common and easy method is the prompt method.
+    <br><code class="w3-codespan">prompt(text)</code> method display a text message and ask for user's input. and we can store the input in a variable.
+    </english>
+    
+            <div class="w3-panel w3-card w3-light-grey">
+    <div class="w3-code htmlHigh notranslate">
+      <h2> Example </h2> 
+let myInput = prompt("Enter your input"); <br>
+alert("You entered " + myInput);
+    </div>
+    <!-- EXAMPLE E -->
+          <button class="w3-button w3-green" onclick="openEditor()"> Try It </button>
+    </div>
+    
+<!-- DEFINITIONS END -->
+
+<!-- FOOTER BEGIN -->
+  <div class="w3-center" style="padding-bottom: 90px;">
+
+    <small>
+    <button onclick="location.reload()" class="w3-button w3-red"><b> Refresh</b> </button>
+
+        <button onclick="askAD()" class="w3-button w3-green"> <b>
+          Ask A Doubt </b></button>
+              <button onclick="srp(document.title)" class="w3-button w3-yellow"> <b>See Related Practices</b></button>
+ </small>
+  </div>
+ </div>
+</div>
+
+
+
+<script>
+placeItems()
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
