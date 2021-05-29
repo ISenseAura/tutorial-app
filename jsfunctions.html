@@ -34,6 +34,13 @@ body, html {
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
+    
+    <select onchange="changeLang()" class="w3-bar-item w3-right w3-button" id="language">
+      <option value="english">English</option>
+      <option value="hindi">Hindi</option>
+      <option value="marathi">Marathi</option>
+    </select>
+    
   </div>
 </div>
 
@@ -44,11 +51,18 @@ body, html {
 <!-- DEFINITIONS -->
 <div class="w3-container" style="padding:80px 16px;">
   <p>
-    <english>
+  <english>
     A JavaScript function is a block of code designed to perform a particular task.
-
-A JavaScript function is executed when "something" invokes it (calls it).
-</english>
+    A JavaScript function is executed when "something" invokes it (calls it).
+  </english>
+  <marathi style="display:none">
+    जावास्क्रिप्ट कार्य म्हणजे विशिष्ट कार्य करण्यासाठी डिझाइन केलेले कोडचा एक ब्लॉक.
+    जेव्हा "काहीतरी" कॉल करते तेव्हा जावास्क्रिप्ट कार्य कार्यान्वित होते (कॉल करते).
+  </marathi>
+  <hindi style="display:none">  
+    एक जावास्क्रिप्ट फ़ंक्शन किसी विशेष कार्य को करने के लिए डिज़ाइन किया गया कोड का एक ब्लॉक है।
+    एक जावास्क्रिप्ट फ़ंक्शन निष्पादित किया जाता है जब "कुछ" इसे आमंत्रित करता है (इसे कॉल करता है)।
+  </hindi>
 
 
   <div class="w3-panel w3-card w3-light-grey">
@@ -65,9 +79,17 @@ A JavaScript function is executed when "something" invokes it (calls it).
   <!-- EXAMPLE E -->
   </div>
   <english>
-<b> Explanation : </b> In the above code ,we created a function and named it <code class="w3-codespan">callMe</code> The code of the function goes inside the curly braces <code class="w3-codespan">{}</code>. On 6th statement we called the function using round brackets <code class="w3-codespan">()</code>. The syntax to create a function is <br> <code class="w3-codespan">function name(parameters) <br> { <br> ...code to be executed <br> }<br> </code>
-<br> We can pass paramaters (variables) to functions by putting them inside the rounded brackets 
-</english>
+    <b> Explanation : </b> In the above code, we created a function and named it <code class="w3-codespan">callMe</code>. The code of the function goes inside the curly braces <code class="w3-codespan">{}</code>. On 6th statement we called the function using round brackets <code class="w3-codespan">()</code>. The syntax to create a function is <br> <code class="w3-codespan">function name(parameters) <br> { <br> ...code to be executed <br> }<br> </code>
+    <br> We can pass paramaters (variables) to functions by putting them inside the rounded brackets.
+  </english>
+  <marathi style="display:none">
+    <b> स्पष्टीकरणः </b> वरील कोडमध्ये, आम्ही एक फंक्शन तयार केले आणि त्यास <code class="w3-codespan">callMe</code>. नाव दिले फंक्शनची कोड कुरळे कंसात <code class="w3-codespan">{}</code> दिली. 6 स्टेटमेंटला आम्ही राउंड ब्रॅकेट्स <code class="w3-codespan">()</code> वापरून फंक्शनला कॉल केला. फंक्शन तयार करण्यासाठी सिंटॅक्स हा आहे <br> <code class="w3-codespan">function name(parameters) <br> { <br> ...code to be executed <br> }<br> </code>
+    <br> आम्ही पॅरामीटर्स (व्हेरिएबल्स) त्यांना गोल कंसात ठेवून फंक्शन्समध्ये पास करू शकतो.
+  </marathi>
+  <hindi style="display:none">
+    <b> स्पष्टीकरण: </b> उपरोक्त कोड में, हमने एक फ़ंक्शन बनाया और इसे <code class="w3-codespan">callMe</code> नाम दिया. फ़ंक्शन का कोड घुंघराले ब्रेसिज़ के अंदर जाता है <code class= "w3-codespan">{}</code>. छठे स्टेटमेंट पर हमने राउंड ब्रैकेट्स <code class="w3-codespan">()</code> का उपयोग करके फंक्शन को कॉल किया। फ़ंक्शन बनाने के लिए सिंटैक्स <br> <code class="w3-codespan">function name(parameters) <br> { <br> ...code to be executed <br> }<br> </code>
+    <br> हम पैरामीटर्स (वेरिएबल) को फंक्शन के लिए गोल कोष्ठक के अंदर रखकर पास कर सकते हैं।
+  </hindi>
 
  <div class="w3-panel w3-card w3-light-grey">
   <div class="w3-code jsHigh notranslate">
@@ -82,7 +104,18 @@ A JavaScript function is executed when "something" invokes it (calls it).
   <button class="w3-button w3-green" onclick="openEditor()"> Try It </button>
   <!-- EXAMPLE E -->
   </div>
-<english>Here the function <code class="w3-codespan">say</code> accepts 1 parameter. on 5th statement we called the function <code class="w3-codespan">say</code> and passed it a String value which is <code class="w3-codespan">Hello i am mayur</code>. When we passed this value to the function ,the function stored this value in <code class="w3-codespan">word</code> variable. And then we output the value using <code class="w3-codespan">word</code> variable or parameter. We can use the <code class="w3-codespan">word</code> variable inside that function only not outside the function. We can pass any number of parameters seperated by commas and any kind of data values through functions </english>
+  <english>
+    Here the function <code class="w3-codespan">say</code> accepts 1 parameter. On 5th statement we called the function <code class="w3-codespan">say</code> and passed it a String value which is <code class="w3-codespan">Hello I am Mayur</code>. When we passed this value to the function ,the function stored this value in <code class="w3-codespan">word</code> variable. 
+    And then we output the value using <code class="w3-codespan">word</code> variable or parameter. We can use the <code class="w3-codespan">word</code> variable inside that function only not outside the function. We can pass any number of parameters seperated by commas and any kind of data values through functions.
+  </english>
+  <marathi style="display:none">
+    येथे फंक्शन <code class="w3-codespan">say</code> 1 पॅरामीटर स्वीकारते. पाचवा विधानावर आम्ही फंक्शन <code class="w3-codespan">say</code> कॉल केले आणि त्याला एक स्ट्रिंग व्हॅल्यू दिले जो <code class="w3-codespan">Hello I am Mayur</code> आहे. जेव्हा आम्ही हे मूल्य फंक्शनमध्ये पाठवितो, तेव्हा फंक्शनने हे मूल्य <code class="w3-codespan">word</code> व्हेरिएबलमध्ये संग्रहित केले.
+    आणि मग आम्ही <code class="w3-codespan">word</code> व्हेरिएबल किंवा पॅरामीटर वापरुन मूल्य आउटपुट करतो. त्या फंक्शनमधे केवळ फंक्शनच्या बाहेरील नसून आपण <code class="w3-codespan">word</code> व्हेरिएबल वापरू शकतो. स्वल्पविरामांद्वारे विभक्त केलेली अनेक पॅरामीटर्स आणि कार्येद्वारे कोणत्याही प्रकारच्या डेटा व्हॅल्यूज आम्ही पास करू शकतो.
+  </marathi>
+  <hindi style="display:none">
+    यहां फ़ंक्शन <code class="w3-codespan">कहना</code> 1 पैरामीटर स्वीकार करता है। 5वें स्टेटमेंट पर हमने फंक्शन <code class="w3-codespan">say</code> को कॉल किया और इसे एक String वैल्यू पास किया जो कि <code class="w3-codespan">Hello I am Mayur</code> है। जब हम इस मान को फ़ंक्शन में पास करते हैं, तो फ़ंक्शन इस मान को <code class="w3-codespan">word</code> चर में संग्रहीत करता है।
+    और फिर हम <code class="w3-codespan">word</code> वेरिएबल या पैरामीटर का उपयोग करके वैल्यू आउटपुट करते हैं। हम <code class="w3-codespan">word</code> वेरिएबल का उपयोग उस फंक्शन के अंदर कर सकते हैं न कि फंक्शन के बाहर। हम फ़ंक्शन के माध्यम से अल्पविराम और किसी भी प्रकार के डेटा मानों से अलग किए गए किसी भी पैरामीटर को पास कर सकते हैं।
+  </hindi>
 
 
  <div class="w3-panel w3-card w3-light-grey">
@@ -99,15 +132,33 @@ A JavaScript function is executed when "something" invokes it (calls it).
   <!-- EXAMPLE E -->
   </div>
 <br>
-<english>
-<b> ● return keyword</b> <br>
-When JavaScript reaches a <code class="w3-codespan">return</code> statement, the function will stop executing.
-<br>
-If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.
-<br>
-Functions often compute a return value. The return value is "returned" back to the "caller"
-<br>
-</english>
+  <english>
+    <b> ● return keyword</b> <br>
+    When JavaScript reaches a <code class="w3-codespan">return</code> statement, the function will stop executing.
+    <br>
+    If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.
+    <br>
+    Functions often compute a return value. The return value is "returned" back to the "caller".
+    <br>
+    </english>
+  <marathi style="display:none">
+    <b> ● return keyword</b> <br>
+    जेव्हा जावास्क्रिप्ट <code class="w3-codespan">return</code> विधान पोहोचते तेव्हा फंक्शन चालविणे थांबवेल.
+    <br>
+    हे विधान एखाद्या विधानावरुन आवाहन केले गेले असल्यास, जावास्क्रिप्ट invoking स्टेटमेंटनंतर कोड कार्यान्वित करण्यासाठी "return" वापरा.
+    <br>
+    कार्ये बर्‍याचदा परताव्याची मोजणी करतात. रिटर्न व्हॅल्यू "caller" कडे परत "returned" आहे.
+    <br>
+  </marathi>
+  <hindi style="display:none">
+    <b> ● return keyword</b> <br>
+    जब जावास्क्रिप्ट एक <code class="w3-codespan">return</code> स्टेटमेंट पर पहुंच जाता है, तो फंक्शन एक्जीक्यूट करना बंद कर देगा।
+    <br>
+    यदि फ़ंक्शन को किसी कथन से लागू किया गया था, तो जावास्क्रिप्ट इनवोकिंग स्टेटमेंट के बाद कोड को निष्पादित करने के लिए "return" आएगा।
+    <br>
+    फ़ंक्शंस अक्सर रिटर्न वैल्यू की गणना करते हैं। वापसी मूल्य "caller" पर वापस "returned" है।
+    <br>
+  </hindi>
 
 <div class="w3-panel w3-card w3-light-grey">
   <div class="w3-code jsHigh notranslate">
@@ -122,11 +173,21 @@ Functions often compute a return value. The return value is "returned" back to t
   <button class="w3-button w3-green" onclick="openEditor()"> Try It </button>
   <!-- EXAMPLE E -->
 </div>
-<english>
-  <b>Explanation : </b> <code class="w3-codespan">return</code> statement stops the executing of the function and returns a value which we can store in a variable as we did on 4th statement. <br>
-  We called the function and it returned a value and we stored the value in a variable named <code class="w3-codespan">cube</code>.
-  <br><br> Try the following example 
-</english>
+  <english>
+    <b>Explanation : </b> <code class="w3-codespan">return</code> statement stops the executing of the function and returns a value which we can store in a variable as we did on 4th statement. <br>
+    We called the function and it returned a value and we stored the value in a variable named <code class="w3-codespan">cube</code>.
+    <br><br> Try the following example:
+  </english>
+  <marathi style="display:none">
+    <b> स्पष्टीकरणः </b> <code class="w3-codespan">return</code> स्टेटमेंट फंक्शनची अंमलबजावणी थांबवते आणि 4th स्टेटमेंट प्रमाणे व्हेरिएबलमधे संचित करू शकणारे मूल्य परत मिळवते. <br>
+    आम्ही फंक्शनला कॉल केला आणि त्याने मूल्य परत केले आणि आम्ही <code class="w3-codespan">cube</code> नावाच्या चलात मूल्य संचयित केले.
+    <br> <br> पुढील उदाहरण वापरून पहा:
+  </marathi>
+  <hindi style="display:none">
+    <b>स्पष्टीकरण: </b> <code class="w3-codespan">return</code> स्टेटमेंट फ़ंक्शन के निष्पादन को रोकता है और एक वैल्यू देता है जिसे हम एक वेरिएबल में स्टोर कर सकते हैं जैसा कि हमने चौथे स्टेटमेंट पर किया था। <br>
+    हमने फ़ंक्शन को कॉल किया और इसने एक मान लौटाया और हमने मान को <code class="w3-codespan">cube</code> नामक एक चर में संग्रहीत किया।
+    <br><br> निम्न उदाहरण का प्रयास करें:
+  </hindi>
 
 <div class="w3-panel w3-card w3-light-grey">
   <div class="w3-code jsHigh notranslate">
@@ -144,12 +205,24 @@ Functions often compute a return value. The return value is "returned" back to t
   <button class="w3-button w3-green" onclick="openEditor()"> Try It </button>
   <!-- EXAMPLE E -->
 </div>
-<english>We can store the values that a function returns by doing <code class="w3-codespan">let x = funcName()</code>
-<br><br>
-<b>Local Variables : </b> Local variables are those variables which are declared inside a <code class="w3-codespan">function</code>. We can NOT use a local variable outside that function. Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.<br><br>
-<b>Global Variables : </b> Global variables are those variables which are declared OUTSIDE a <code class="w3-codespan">function</code>. We can use a global variable anywhere in the code.
-</english>
-</p>
+  <english>
+    We can store the values that a function returns by doing <code class="w3-codespan">let x = funcName()</code>
+    <br><br>
+    <b>Local Variables : </b> Local variables are those variables which are declared inside a <code class="w3-codespan">function</code>. We can NOT use a local variable outside that function. Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.<br><br>
+    <b>Global Variables : </b> Global variables are those variables which are declared OUTSIDE a <code class="w3-codespan">function</code>. We can use a global variable anywhere in the code.
+  </english>
+  <marathi style="display:none">
+    <code class="w3-codespan">let x = funcName()</code> करून फंक्शनद्वारे मिळणारी मूल्ये आम्ही संचयित करू शकतो.
+    <br><br>
+    <b>Local Variables : </b> Local variables हे ते variables आहेत जे <code class="w3-codespan">function</code> मध्ये घोषित केले जातात. आम्ही त्या फंक्शनच्या बाहेर लोकल व्हेरिएबल वापरू शकत नाही. स्थानिक व्हेरिएबल्स केवळ त्यांच्या कार्ये अंतर्गतच ओळखली जात असल्याने, समान नावाचे व्हेरिएबल्स विविध कार्यांमध्ये वापरले जाऊ शकतात. <br> <br>
+    <b>Global Variables : </b> Global variables म्हणजे ते व्हेरिएबल्स जे <code class="w3-codespan">function</code> च्या बाहेर घोषित केले जातात. आम्ही कोडमध्ये कोठेही ग्लोबल व्हेरिएबल वापरू शकतो.
+  </marathi>
+  <hindi style="display:none">
+    हम फ़ंक्शन द्वारा प्राप्त मानों को <code class = "w3-codespan"> let x = funcName () </code> द्वारा स्टोर कर सकते हैं।
+    <br><br>
+    <b>Local Variables : </b> स्थानीय चर वे चर हैं जिन्हें <code class="w3-codespan">function</code> के अंदर घोषित किया जाता है। हम उस फ़ंक्शन के बाहर स्थानीय चर का उपयोग नहीं कर सकते हैं। चूंकि स्थानीय चर केवल उनके कार्यों के अंदर पहचाने जाते हैं, एक ही नाम वाले चर का उपयोग विभिन्न कार्यों में किया जा सकता है।<br><br>
+    <b> Global Variables: </b> वैश्विक चर वे चर हैं जो <code class = "w3-codespan">function</code> के बाहर घोषित किए जाते हैं। हम कोड में कहीं भी वैश्विक चर का उपयोग कर सकते हैं।
+  </hindi>
 <!-- DEFINITIONS END -->
 
  <div class="w3-center" style="padding-bottom: 90px;">
